@@ -1,4 +1,4 @@
-Scientific Python — Volume II  
+<img src="https://img.shields.io/badge/-_Summer_2020-orange.svg?style=flat-square" align="right"/> Scientific Python — Volume II  
 **Scientific Visualization – Python & Matplotlib**, Nicolas P. Rougier
 
 <img src="./cover.png" width="33%" alt="Front cover" align="right"/>
@@ -27,5 +27,5 @@ In the meantime and if you're impatient, you can read:
 ---
 <br/>
 
-<img alt="16/08/2018" align="right"/> **Image of the week** (from the book)
+<img src="https://img.shields.io/badge/-August_16,_2018-grey.svg?style=flat-square" align="right"/> **Image of the week** (from the book)  
 ![](boots.png)
