@@ -7,6 +7,15 @@ If you want to support the book, you can you can [tip a few euros](https://www.p
 * [Python & OpenGL for Scientific Visualization](https://www.labri.fr/perso/nrougier/python-opengl/)
 * [From Python to Numpy](https://www.labri.fr/perso/nrougier/from-python-to-numpy/)
 * [100 Numpy exercices](https://github.com/rougier/numpy-100)
+* [Matplotlib cheat sheet](https://github.com/rougier/matplotlib-cheatsheet)
+
+<img src="" alt="Nicolas Rougier" align="right"/><br/>
+
+---
+
+Here is the temporary front cover, made with matplotlib and a custom
+3D projection.
+
 
 ![](cover.png)
 
