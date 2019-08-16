@@ -27,5 +27,5 @@ In the meantime and if you're impatient, you can read:
 ---
 <br/>
 
-<img src="https://img.shields.io/badge/-August_16,_2018-grey.svg?style=flat-square" align="right"/> **Image of the week** (from the book)  
+<img src="https://img.shields.io/badge/-August_16,_2019-grey.svg?style=flat-square" align="right"/> **Image of the week** (from the book)  
 ![](images/boots.png)
