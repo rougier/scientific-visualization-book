@@ -1,4 +1,5 @@
-### Scientific Visualization – Python & Matplotlib
+Scientific Python — Volume II  
+**Scientific Visualization – Python & Matplotlib**, Nicolas P. Rougier
 
 <img src="./cover.png" width="33%" alt="Front cover" align="right"/>
 
@@ -22,3 +23,9 @@ In the meantime and if you're impatient, you can read:
 * [100 Numpy exercices](https://github.com/rougier/numpy-100)
 * [Matplotlib cheat sheet](https://github.com/rougier/matplotlib-cheatsheet)
 
+<br/><br/>
+---
+<br/>
+
+<img alt="16/08/2018" align="right"/> **Image of the week** (from the book)
+![](boots.png)
