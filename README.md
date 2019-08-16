@@ -7,7 +7,7 @@ An open access book on scientific visualization using python and matplotlib to
 be released during summer 2020 (hopefully). Sources will be available in this
 repository, the PDF book will be open-access and the printed book will cost 50$.
 
-If you want to support the book, you can you can [tip a few
+If you want to support the book, you can [tip a few
 euros](https://www.paypal.me/NicolasPRougier/10). If you want to have access to
 the private repository during the writing, you can [tip a few more
 euros](https://www.paypal.me/NicolasPRougier/25) (and let me know abour your
