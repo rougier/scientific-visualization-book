@@ -23,6 +23,12 @@ In the meantime and if you're impatient, you can read:
 * [100 Numpy exercices](https://github.com/rougier/numpy-100)
 * [Matplotlib cheat sheet](https://github.com/rougier/matplotlib-cheatsheet)
 
+
+### Latest news
+
+
+You can read them on them [news issue](https://github.com/rougier/scientific-visualization-book/issues/1) and subscribe to this specific issue to get notified about new posts.
+
 <br/><br/>
 ---
 <br/>
