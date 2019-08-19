@@ -35,9 +35,11 @@ You can read them on them [news issue](https://github.com/rougier/scientific-vis
 
 ### Image of the week
 
-<img src="https://img.shields.io/badge/-August_19,_2019-grey.svg?style=flat-square" align="right"/> Text shadow (TextPath, PolyCollection and imshow)  
+The images below come from the book and have been made using matplotlib, of course.  
+
+<img src="https://img.shields.io/badge/-August_19,_2019-grey.svg?style=flat-square" align="right"/> **Text shadow** (TextPath, PolyCollection and imshow)  
 ![](images/text-shadow.png)
 
 
-<img src="https://img.shields.io/badge/-August_16,_2019-grey.svg?style=flat-square" align="right"/> Boots (scatter plot)  
+<img src="https://img.shields.io/badge/-August_16,_2019-grey.svg?style=flat-square" align="right"/> **Boots** (scatter plot)  
 ![](images/boots.png)
