@@ -29,6 +29,10 @@ In the meantime and if you're impatient, you can read:
 
 You can read them on them [news issue](https://github.com/rougier/scientific-visualization-book/issues/1) and subscribe to this specific issue to get notified about new posts.
 
+### Progress
+
+You can follow progress on the [project tab](https://github.com/rougier/scientific-visualization-book/projects/1)
+
 <br/><br/>
 ---
 <br/>
