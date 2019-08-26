@@ -41,6 +41,9 @@ You can follow progress on the [project tab](https://github.com/rougier/scientif
 
 The images below come from the book and have been made using matplotlib, of course.  
 
+<img src="https://img.shields.io/badge/-August_26,_2019-grey.svg?style=flat-square" align="right"/> **Scatter 3D** (PolyCollection, scatter(s), Ellipses + custom projection)  
+![](images/scatter-3d.png)
+
 <img src="https://img.shields.io/badge/-August_19,_2019-grey.svg?style=flat-square" align="right"/> **Text shadow** (TextPath, PolyCollection and imshow)  
 ![](images/text-shadow.png)
 
