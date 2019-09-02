@@ -42,6 +42,9 @@ You can follow progress on the [project tab](https://github.com/rougier/scientif
 
 The images below come from the book and have been made using matplotlib, of course.  
 
+<img src="https://img.shields.io/badge/-September_2,_2019-grey.svg?style=flat-square" align="right"/> [**Recursive Voronoi**](https://github.com/rougier/recursive-voronoi)(PolyCollection)  
+![](https://raw.githubusercontent.com/rougier/recursive-voronoi/master/recursive-voronoi.png)
+
 <img src="https://img.shields.io/badge/-August_26,_2019-grey.svg?style=flat-square" align="right"/> **Scatter 3D** (PolyCollection, scatter(s), Ellipses and custom 3D projection)  
 ![](images/scatter-3d.png)
 
