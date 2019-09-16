@@ -42,6 +42,9 @@ You can follow progress on the [project tab](https://github.com/rougier/scientif
 
 The images below come from the book and have been made using matplotlib, of course.  
 
+<img src="https://img.shields.io/badge/-September_16,_2019-grey.svg?style=flat-square" align="right"/> **Platonic solids** (PolyCollection)  
+![](images/platonic-solids.png)
+
 <img src="https://img.shields.io/badge/-September_9,_2019-grey.svg?style=flat-square" align="right"/> [**Calendar heatmap (github activity)**](https://github.com/rougier/calendar-heatmap) (Imshow, PolyCollection)  
 ![](https://github.com/rougier/calendar-heatmap/raw/master/github-activity.png)
 
