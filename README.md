@@ -42,6 +42,9 @@ You can follow progress on the [project tab](https://github.com/rougier/scientif
 
 The images below come from the book and have been made using matplotlib, of course.  
 
+<img src="https://img.shields.io/badge/-September_23,_2019-grey.svg?style=flat-square" align="right"/> **Hatched bars** (bar)  
+![](images/hatched-bars.png)
+
 <img src="https://img.shields.io/badge/-September_16,_2019-grey.svg?style=flat-square" align="right"/> **Platonic solids** (PolyCollection)  
 ![](images/platonic-solids.png)
 
