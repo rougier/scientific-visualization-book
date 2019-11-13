@@ -43,6 +43,9 @@ You can follow progress on the [project tab](https://github.com/rougier/scientif
 
 The images below come from the book and have been made using matplotlib, of course.  
 
+<img src="https://img.shields.io/badge/-November_13,_2019-grey.svg?style=flat-square" align="right"/> **Oriented histogram** (axisartist toolkit)  
+![](images/histogram-pca.png)
+
 <img src="https://img.shields.io/badge/-October_14,_2019-grey.svg?style=flat-square" align="right"/> **Seasonal plot** (polar plot & patches)  
 ![](images/text-polar.png)
 
