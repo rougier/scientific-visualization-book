@@ -13,6 +13,7 @@ If you want to support the book, you can:
  * [Tip a few euros (10 €)](https://www.paypal.me/NicolasPRougier/10)
  * [Access the private repository (25 €)](https://www.paypal.me/NicolasPRougier/25) during the writing  
    (and let me know about your github handle)
+ * [Sponsor me](https://github.com/sponsors/rougier) through GitHub sponsorship program
  
 Note that in any case, the repository will be made public at the end of the writing and the PDF will be
 available for free.
