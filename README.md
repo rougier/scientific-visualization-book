@@ -43,6 +43,9 @@ You can follow progress on the [project tab](https://github.com/rougier/scientif
 
 The images below come from the book and have been made using matplotlib, of course.  
 
+<img src="https://img.shields.io/badge/-November_25,_2019-grey.svg?style=flat-square" align="right"/> **Escher style** (Polygons)  
+![](images/escher.mp4)
+
 <img src="https://img.shields.io/badge/-November_22,_2019-grey.svg?style=flat-square" align="right"/> **Many plots** (plot & fill_between)  
 ![](images/zorder-plots.png)
 
