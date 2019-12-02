@@ -43,6 +43,9 @@ You can follow progress on the [project tab](https://github.com/rougier/scientif
 
 The images below come from the book and have been made using matplotlib, of course.  
 
+<img src="https://img.shields.io/badge/-December_2,_2019-grey.svg?style=flat-square" align="right"/> **Matplotlib map** (Contour + lines collection)  
+![](images/matplotlib-map.png)
+
 <img src="https://img.shields.io/badge/-November_25,_2019-grey.svg?style=flat-square" align="right"/> **Escher style** (Polygons)  
 ![](images/escher.png)
 
