@@ -43,6 +43,12 @@ You can follow progress on the [project tab](https://github.com/rougier/scientif
 
 The images below come from the book and have been made using matplotlib, of course.  
 
+<img src="https://img.shields.io/badge/-March_13,_2020-grey.svg?style=flat-square" align="right"/> **3D projection**  
+![](images/projection-3d-gaussian.png)
+
+<img src="https://img.shields.io/badge/-March_6,_2020-grey.svg?style=flat-square" align="right"/> **Polar projection**  
+![](images/polar-projection.png)
+
 <img src="https://img.shields.io/badge/-February_21,_2020-grey.svg?style=flat-square" align="right"/> **Scales** (plot + scales)  
 ![](images/scales.png)
 
