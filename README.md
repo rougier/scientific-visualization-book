@@ -43,6 +43,9 @@ You can follow progress on the [project tab](https://github.com/rougier/scientif
 
 The images below come from the book and have been made using matplotlib, of course.  
 
+<img src="https://img.shields.io/badge/-September_18,_2020-grey.svg?style=flat-square" align="right"/> **Polygons & clipping**  
+![](images/polygon-clipping.png)
+
 <img src="https://img.shields.io/badge/-July_2,_2020-grey.svg?style=flat-square" align="right"/> **Post-processing**  
 ![](images/metropolis.png)
 
