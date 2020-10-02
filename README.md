@@ -43,6 +43,9 @@ You can follow progress on the [project tab](https://github.com/rougier/scientif
 
 The images below come from the book and have been made using matplotlib, of course.  
 
+<img src="https://img.shields.io/badge/-October_2,_2020-grey.svg?style=flat-square" align="right"/> **Signal multisampling (plot, collection, imshow)**  
+![](images/multisample.png)
+
 <img src="https://img.shields.io/badge/-September_25,_2020-grey.svg?style=flat-square" align="right"/> **Polygons & testing**  
 ![](images/radial-maze.png)
 
