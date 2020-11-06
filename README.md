@@ -43,6 +43,9 @@ You can follow progress on the [project tab](https://github.com/rougier/scientif
 
 The images below come from the book and have been made using matplotlib, of course.  
 
+<img src="https://img.shields.io/badge/-November_6,_2020-grey.svg?style=flat-square" align="right"/> **Textual contours (text path)**  
+![](images/typography-text-path.png)
+
 <img src="https://img.shields.io/badge/-October_30,_2020-grey.svg?style=flat-square" align="right"/> **Typography (text, ticks)**  
 ![](images/typography-matters.png)
 
