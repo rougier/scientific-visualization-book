@@ -4,7 +4,7 @@
 <img src="images/cover.png" width="33%" alt="Front cover" align="right"/>
 
 An open access book on scientific visualization using python and matplotlib to
-be released during summer 2020 (hopefully). Sources will be available in this
+be released during Sprint 2021 (hopefully). Sources will be available in this
 repository, the PDF book will be open-access and the printed book will cost 50$.
 
 If you want to support the book, you can:
