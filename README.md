@@ -44,7 +44,7 @@ You can follow progress on the [project tab](https://github.com/rougier/scientif
 
 The images below come from the book and have been made using matplotlib, of course.  
 
-<img src="https://img.shields.io/badge/-February_22,_2021-grey.svg?style=flat-square" align="right"/> **Warerfall 3d (poly collection)**  
+<img src="https://img.shields.io/badge/-February_22,_2021-grey.svg?style=flat-square" align="right"/> **Waterfall 3d (poly collection)**  
 ![](images/waterfall-3d.png)
 
 <img src="https://img.shields.io/badge/-January_15,_2021-grey.svg?style=flat-square" align="right"/> **Flower Polar (poly collection)**  
