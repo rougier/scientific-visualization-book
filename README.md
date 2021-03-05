@@ -44,7 +44,7 @@ You can follow progress on the [project tab](https://github.com/rougier/scientif
 
 The images below come from the book and have been made using matplotlib, of course.  
 
-<img src="https://img.shields.io/badge/-March_05,_2021-grey.svg?style=flat-square" align="right"/> **Domain coloring (imshow and controus)**  
+<img src="https://img.shields.io/badge/-March_05,_2021-grey.svg?style=flat-square" align="right"/> **Domain coloring (imshow and contours)**  
 ![](images/domain-coloring.png)
 
 <img src="https://img.shields.io/badge/-February_22,_2021-grey.svg?style=flat-square" align="right"/> **Waterfall 3d (poly collection)**  
