@@ -44,6 +44,9 @@ You can follow progress on the [project tab](https://github.com/rougier/scientif
 
 The images below come from the book and have been made using matplotlib, of course.  
 
+<img src="https://img.shields.io/badge/-June_18,_2021-grey.svg?style=flat-square" align="right"/> **Dropshadowed contours (contourf + imshow)**  
+![](images/contour-dropshadow.png)
+
 <img src="https://img.shields.io/badge/-March_05,_2021-grey.svg?style=flat-square" align="right"/> **Domain coloring (imshow and contours)**  
 ![](images/domain-coloring.png)
 
