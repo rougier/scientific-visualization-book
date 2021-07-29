@@ -40,6 +40,9 @@ You can read them on them [news issue](https://github.com/rougier/scientific-vis
 
 The images below come from the book and have been made using matplotlib, of course.  
 
+<img src="https://img.shields.io/badge/-July_29,_2021-grey.svg?style=flat-square" align="right"/> **Fancy axes (locatable axes + Latex)**  
+![](images/fancy-axes.png)
+
 <img src="https://img.shields.io/badge/-July_22,_2021-grey.svg?style=flat-square" align="right"/> **Spiral Pi (text path)**  
 ![](images/spiral-pi.png)
 
