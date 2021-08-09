@@ -4,7 +4,7 @@
 <img src="images/cover.png" width="33%" alt="Front cover" align="right"/>
 
 An open access book on scientific visualization using python and matplotlib to
-be released during Spring 2021 (hopefully). Sources will be available in this
+be released at the end of Summer 2021. Code will be available in this
 repository, the PDF book will be open-access and the printed book will cost 50$.
 
 If you want to support the book, you can:
@@ -29,8 +29,7 @@ In the meantime and if you're impatient, you can read:
 
 ### Latest news
 
-
-You can read them on them [news issue](https://github.com/rougier/scientific-visualization-book/issues/1) and subscribe to this specific issue to get notified about new posts.
+9 August 2021: Writing the last two chapters.
 
 <br/><br/>
 ---
