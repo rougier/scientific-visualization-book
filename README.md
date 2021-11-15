@@ -44,9 +44,10 @@ future work on Python (and
 
 <img src="images/contour-dropshadow.png" width="31%"/> <img src="images/domain-coloring.png" width="31%"/> <img src="images/metropolis.png" width="31%"/>
 <img src="images/zorder-plots.png" width="31%"/> <img src="images/scales.png" width="31%"/> <img src="images/histogram-pca.png" width="31%"/> 
-<img src="images/hatched-bars.png" width="31%"/> <img src="images/platonic-solids.png" width="31%"/> <img src="images/projection-3D-gaussian.png" width="31%"/>
+<img src="images/hatched-bars.png" width="31%"/> <img src="images/platonic-solids.png" width="31%"/> <img src="images/projection-3d-gaussian.png" width="31%"/>
 <img src="images/polygon-clipping.png" width="31%"/> <img src="images/multisample.png" width="31%"/> <img src="images/typography-matters.png" width="31%"/>
 <img src="images/scatter-3d.png" width="31%"/> <img src="images/waterfall-3d.png" width="31%"/> <img src="https://github.com/rougier/matplotlib-3d/blob/master/doc/bunnies.png" width="31%"/>
 <img src="images/polar-projection.png" width="31%"/> <img src="https://raw.githubusercontent.com/rougier/recursive-voronoi/master/recursive-voronoi.png" width="31%"/> <img src="images/text-polar.png" width="31%"/>
 <img src="images/spiral-pi.png" width="31%"/> <img src="images/escher.png" width="31%"/> <img src="images/radial-maze.png" width="31%"/>
 <img src="images/text-shadow.png" width="95%"/>
+
