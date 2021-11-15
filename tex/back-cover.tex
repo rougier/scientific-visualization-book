@@ -1,0 +1,36 @@
+\documentclass{standalone}
+\usepackage{graphicx}
+
+\makeatletter
+\newcommand{\definetrim}[2]{%
+  \define@key{Gin}{#1}[]{\setkeys{Gin}{trim=#2,clip}}%
+}
+\makeatother
+
+\newlength{\coverheight}
+\newlength{\coverwidth}
+\newlength{\bleedwidth}
+\newlength{\spinewidth}
+
+\newlength{\trimleft}
+\newlength{\trimright}
+\newlength{\trimbottom}
+\newlength{\trimtop}
+
+\setlength{\coverheight}{210mm}
+\setlength{\coverwidth}{148mm}
+\setlength{\bleedwidth}{3mm}
+\setlength{\spinewidth}{10.5mm}
+
+\setlength{\trimleft}{\dimexpr  \bleedwidth \relax }
+\setlength{\trimright}{\dimexpr  \bleedwidth + \coverwidth + \spinewidth \relax }
+\setlength{\trimbottom}{\dimexpr  \bleedwidth \relax }
+\setlength{\trimtop}{\dimexpr  \bleedwidth \relax }
+\definetrim{front}{\trimleft{} \trimbottom{} \trimright{} \trimtop{}}
+
+\begin{document}
+\includegraphics[front,height=216mm]{softcover-cover.pdf}
+\end{document}
+
+% Largeur: 371.7 - 210.7 - 22
+% Hauteur: 260 mm 

@@ -1,126 +1,53 @@
-<img src="https://img.shields.io/badge/-_Spring_2021-orange.svg?style=flat-square" align="right"/> Scientific Python — Volume II  
-**Scientific Visualization – Python & Matplotlib**, Nicolas P. Rougier
+## Scientific Visualization: Python + Matplotlib
+**Nicolas P. Rougier, Bordeaux, November 2021.**  
 
-<img src="images/cover.png" width="33%" alt="Front cover" align="right"/>
+<img src="images/book.png" width="25%" alt="Front cover" align="left"/>
 
-An open access book on scientific visualization using python and matplotlib to
-be released during Spring 2021 (hopefully). Sources will be available in this
-repository, the PDF book will be open-access and the printed book will cost 50$.
+The Python scientific visualisation landscape is huge. It is composed of a myriad of tools, ranging from the most versatile and widely used down to the more specialised and confidential. Some of these tools are community based while others are developed by companies. Some are made specifically for the web, others are for the desktop only, some deal with 3D and large data, while others target flawless 2D rendering. In this landscape, Matplotlib has a very special place. It is a versatile and powerful library that allows you to design very high quality figures, suitable for scientific publishing. It also offers a simple and intuitive interface as well as an object oriented architecture that allows you to tweak anything within a figure. Finally, it can be used as a regular graphic library in order to design non‐scientific figures. This book is organized into four parts. The first part considers the fundamental principles of the Matplotlib library. This includes reviewing the different parts that constitute a figure, the different coordinate systems, the available scales and projections, and we’ll also introduce a few concepts related to typography and colors. The second part is dedicated to the actual design of a figure. After introducing some simple rules for generating better figures, we’ll then go on to explain the Matplotlib defaults and styling system before diving on into figure layout organization. We’ll then explore the different types of plot available and see how a figure can be ornamented with different elements. The third part is dedicated to more advanced concepts, namely 3D figures, optimization & animation.  The fourth and final part is a collection of showcases.
 
-If you want to support the book, you can:
+### Read the book
 
- * Star the project
- * [Tip a few euros (10 €)](https://www.paypal.me/NicolasPRougier/10)
- * [Access the private repository (25 €)](https://www.paypal.me/NicolasPRougier/25) during the writing  
-   (and let me know about your github handle)
- * [Sponsor me](https://github.com/sponsors/rougier) through GitHub sponsorship program
- * **[Nominate me](https://stars.github.com/nominate/)** for the GitHub stars program (it's free)
- 
-Note that in any case, the repository will be made public at the end of the writing and the PDF will be
-available for free.
+You can read the book **[PDF](https://hal.inria.fr/hal-03427242/document)** (95Mo) that is open access and hosted on
+[HAL](https://hal.archives-ouvertes.fr/) which is a French open
+archive for academics.  
+Sources for the book (including code examples)
+are available at
+[github.com/rougier/scientific-visualization-book](https://github.com/rougier/scientific-visualization-book).  
 
-In the meantime and if you're impatient, you can read:
+### Buy the book
+
+If you want to buy the book, you can order a **printed edition** at
+[amazon.com](https://www.amazon.com/dp/2957990105) for 49$. If you want to support or sponsor my
+future work on Python (and
+[Emacs](https://github.com/rougier/nano-emacs)), you can use
+[paypal](https://www.paypal.com/paypalme/NicolasPRougier/10),
+[github](https://github.com/sponsors/rougier) or
+[liberapay](https://en.liberapay.com/rougier/).
+
+<a href="https://www.paypal.com/paypalme/NicolasPRougier/5"><img src="https://img.shields.io/badge/-TIP_5$-yellow.svg?style=flat-square"/><a/> 
+ <a href="https://www.paypal.com/paypalme/NicolasPRougier/10"><img src="https://img.shields.io/badge/-TIP_10$-orange.svg?style=flat-square"/><a/>
+ <a href="https://www.paypal.com/paypalme/NicolasPRougier/25"><img src="https://img.shields.io/badge/-TIP_25$-red.svg?style=flat-square"/><a/> 
+ <a href="https://github.com/sponsors/rougier/sponsorships?sponsor=rougier&tier_id=6981&preview=false"><img src="https://img.shields.io/badge/-5$/Mo-yellow.svg?style=flat-square&logo=github"/><a/> <a href="https://github.com/sponsors/rougier/sponsorships?sponsor=rougier&tier_id=11147&preview=false"><img src="https://img.shields.io/badge/-10$/Mo-orange.svg?style=flat-square&logo=github"/><a/> 
+<a href="https://github.com/sponsors/rougier/sponsorships?sponsor=rougier&tier_id=108712&preview=false"><img src="https://img.shields.io/badge/-25$/Mo-red.svg?style=flat-square&logo=github"/><a/> 
+<a href="https://en.liberapay.com/rougier/donate"><img src="https://img.shields.io/badge/-PATRON/Week-green.svg?style=flat-square&logo=liberapay&logoColor=white"/><a/> 
+
+
+### See also
 
 * [Python & OpenGL for Scientific Visualization](https://www.labri.fr/perso/nrougier/python-opengl/)
-* [From Python to Numpy](https://www.labri.fr/perso/nrougier/from-python-to-numpy/)
+* [From Python to Numpy](https://www.labri.fr/perso/nrougier/from-python-to-numpy/) (Scientific Python Volume I)
 * [100 Numpy exercices](https://github.com/rougier/numpy-100)
-* [Matplotlib cheat sheet](https://github.com/rougier/matplotlib-cheatsheet)
+* [Matplotlib cheat sheets](https://github.com/matplotlib/cheatsheets)
 
 
-### Latest news
 
+### Screenshots
 
-You can read them on them [news issue](https://github.com/rougier/scientific-visualization-book/issues/1) and subscribe to this specific issue to get notified about new posts.
-
-<br/><br/>
----
-<br/>
-
-### Image of the week
-
-The images below come from the book and have been made using matplotlib, of course.  
-
-<img src="https://img.shields.io/badge/-July_29,_2021-grey.svg?style=flat-square" align="right"/> **Fancy axes (locatable axes + Latex)**  
-![](images/fancy-axes.png)
-
-<img src="https://img.shields.io/badge/-July_22,_2021-grey.svg?style=flat-square" align="right"/> **Spiral Pi (text path)**  
-![](images/spiral-pi.png)
-
-<img src="https://img.shields.io/badge/-June_18,_2021-grey.svg?style=flat-square" align="right"/> **Dropshadowed contours (contourf + imshow)**  
-![](images/contour-dropshadow.png)
-
-<img src="https://img.shields.io/badge/-March_05,_2021-grey.svg?style=flat-square" align="right"/> **Domain coloring (imshow and contours)**  
-![](images/domain-coloring.png)
-
-<img src="https://img.shields.io/badge/-February_22,_2021-grey.svg?style=flat-square" align="right"/> **Waterfall 3d (poly collection)**  
-![](images/waterfall-3d.png)
-
-<img src="https://img.shields.io/badge/-January_15,_2021-grey.svg?style=flat-square" align="right"/> **Flower Polar (poly collection)**  
-![](images/flower-polar.png)
-
-<img src="https://img.shields.io/badge/-November_6,_2020-grey.svg?style=flat-square" align="right"/> **Textual contours (text path)**  
-![](images/typography-text-path.png)
-
-<img src="https://img.shields.io/badge/-October_30,_2020-grey.svg?style=flat-square" align="right"/> **Typography (text, ticks)**  
-![](images/typography-matters.png)
-
-<img src="https://img.shields.io/badge/-October_9,_2020-grey.svg?style=flat-square" align="right"/> **Complex axes layout (axes, text, imshow)**  
-![](images/poster-layout.png)
-
-<img src="https://img.shields.io/badge/-October_2,_2020-grey.svg?style=flat-square" align="right"/> **Signal multisampling (plot, collection, imshow)**  
-![](images/multisample.png)
-
-<img src="https://img.shields.io/badge/-September_25,_2020-grey.svg?style=flat-square" align="right"/> **Polygons & testing**  
-![](images/radial-maze.png)
-
-<img src="https://img.shields.io/badge/-September_18,_2020-grey.svg?style=flat-square" align="right"/> **Polygons & clipping**  
-![](images/polygon-clipping.png)
-
-<img src="https://img.shields.io/badge/-July_2,_2020-grey.svg?style=flat-square" align="right"/> **Post-processing**  
-![](images/metropolis.png)
-
-<img src="https://img.shields.io/badge/-March_13,_2020-grey.svg?style=flat-square" align="right"/> **3D projection**  
-![](images/projection-3d-gaussian.png)
-
-<img src="https://img.shields.io/badge/-March_6,_2020-grey.svg?style=flat-square" align="right"/> **Polar projection**  
-![](images/polar-projection.png)
-
-<img src="https://img.shields.io/badge/-February_21,_2020-grey.svg?style=flat-square" align="right"/> **Scales** (plot + scales)  
-![](images/scales.png)
-
-<img src="https://img.shields.io/badge/-December_2,_2019-grey.svg?style=flat-square" align="right"/> **Matplotlib map** (Contour + lines collection)  
-![](images/matplotlib-map.png)
-
-<img src="https://img.shields.io/badge/-November_25,_2019-grey.svg?style=flat-square" align="right"/> **Escher style** (Polygons)  
-![](images/escher.png)
-
-<img src="https://img.shields.io/badge/-November_22,_2019-grey.svg?style=flat-square" align="right"/> **Many plots** (plot & fill_between)  
-![](images/zorder-plots.png)
-
-<img src="https://img.shields.io/badge/-November_13,_2019-grey.svg?style=flat-square" align="right"/> **Oriented histogram** (axisartist toolkit)  
-![](images/histogram-pca.png)
-
-<img src="https://img.shields.io/badge/-October_14,_2019-grey.svg?style=flat-square" align="right"/> **Seasonal plot** (polar plot & patches)  
-![](images/text-polar.png)
-
-<img src="https://img.shields.io/badge/-September_23,_2019-grey.svg?style=flat-square" align="right"/> **Hatched bars** (bar)  
-![](images/hatched-bars.png)
-
-<img src="https://img.shields.io/badge/-September_16,_2019-grey.svg?style=flat-square" align="right"/> **Platonic solids** (PolyCollection)  
-![](images/platonic-solids.png)
-
-<img src="https://img.shields.io/badge/-September_9,_2019-grey.svg?style=flat-square" align="right"/> [**Calendar heatmap (github activity)**](https://github.com/rougier/calendar-heatmap) (Imshow, PolyCollection)  
-![](https://github.com/rougier/calendar-heatmap/raw/master/github-activity.png)
-
-<img src="https://img.shields.io/badge/-September_2,_2019-grey.svg?style=flat-square" align="right"/> [**Recursive Voronoi**](https://github.com/rougier/recursive-voronoi) (PolyCollection)  
-![](https://raw.githubusercontent.com/rougier/recursive-voronoi/master/recursive-voronoi.png)
-
-<img src="https://img.shields.io/badge/-August_26,_2019-grey.svg?style=flat-square" align="right"/> **Scatter 3D** (PolyCollection, scatter(s), Ellipses and custom 3D projection)  
-![](images/scatter-3d.png)
-
-<img src="https://img.shields.io/badge/-August_19,_2019-grey.svg?style=flat-square" align="right"/> **Text shadow** (TextPath, PolyCollection and imshow)  
-![](images/text-shadow.png)
-
-
-<img src="https://img.shields.io/badge/-August_16,_2019-grey.svg?style=flat-square" align="right"/> **Boots** (scatter plot)  
-![](images/boots.png)
+<img src="images/contour-dropshadow.png" width="31%"/> <img src="images/domain-coloring.png" width="31%"/> <img src="images/metropolis.png" width="31%"/>
+<img src="images/zorder-plots.png" width="31%"/> <img src="images/scales.png" width="31%"/> <img src="images/histogram-pca.png" width="31%"/> 
+<img src="images/hatched-bars.png" width="31%"/> <img src="images/platonic-solids.png" width="31%"/> <img src="images/projection-3D-gaussian.png" width="31%"/>
+<img src="images/polygon-clipping.png" width="31%"/> <img src="images/multisample.png" width="31%"/> <img src="images/typography-matters.png" width="31%"/>
+<img src="images/scatter-3d.png" width="31%"/> <img src="images/waterfall-3d.png" width="31%"/> <img src="https://github.com/rougier/matplotlib-3d/blob/master/doc/bunnies.png" width="31%"/>
+<img src="images/polar-projection.png" width="31%"/> <img src="https://raw.githubusercontent.com/rougier/recursive-voronoi/master/recursive-voronoi.png" width="31%"/> <img src="images/text-polar.png" width="31%"/>
+<img src="images/spiral-pi.png" width="31%"/> <img src="images/escher.png" width="31%"/> <img src="images/radial-maze.png" width="31%"/>
+<img src="images/text-shadow.png" width="95%"/>

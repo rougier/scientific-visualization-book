@@ -1,0 +1,102 @@
+\documentclass[
+  coverheight=248mm, %% 210mm + 2x19mm 
+  coverwidth=167mm, %% 148mm + 19mm
+  %%  bleedwidth=19mm,    % -> margin
+  bleedwidth=3mm,     % 
+  spinewidth=23mm,    % (13mm + 10mm)
+  marklength=0mm,     % 
+  markcolor=white
+]{bookcover}
+
+\letnamebookcoverpart{back typing area}{back}[19mm,19mm,0mm,19mm]
+\letnamebookcoverpart{front typing area}{front}[0mm,19mm,19mm,19mm]
+\letnamebookcoverpart{spine typing area}{spine}[5mm,19mm,5mm,19mm]
+
+\usepackage{setspace}
+\usepackage{xcolor}
+\usepackage{fontspec}
+\setmainfont{Avenir}
+\renewcommand{\baselinestretch}{1.5}
+
+\begin{document}
+
+  \begin{bookcover}
+    
+    \bookcovercomponent{picture}{whole page}{cover-pattern.pdf}
+
+    %% DEBUG
+    %%  \bookcovercomponent{color}{bg whole}{white,opacity=0.05}
+    %%  \bookcovercomponent{color}{back}{white,opacity=0.05}
+    %%  \bookcovercomponent{color}{back typing area}{white,opacity=0.05}
+    %%  \bookcovercomponent{color}{front}{white,opacity=0.05}
+    %%  \bookcovercomponent{color}{front typing area}{white,opacity=0.05}
+    %%  \bookcovercomponent{color}{spine}{white,opacity=0.05}
+    %%  \bookcovercomponent{color}{spine typing area}{white,opacity=0.05}
+
+    %% \begin{bookcoverelement}{tikz}{bg whole}
+    %%   \draw [fill=none, white, opacity=0.5] (0,0) rectangle (\partwidth,\partheight);
+    %% \end{bookcoverelement}
+    %% \begin{bookcoverelement}{tikz}{front}
+    %%   \draw [fill=none, white, opacity=0.5] (0,0) rectangle (\partwidth,\partheight);
+    %% \end{bookcoverelement}
+    %% \begin{bookcoverelement}{tikz}{front typing area}
+    %%   \draw [fill=none, white, opacity=0.5] (0,0) rectangle (\partwidth,\partheight);
+    %% \end{bookcoverelement}
+    %% \begin{bookcoverelement}{tikz}{back}
+    %%   \draw [fill=none, white, opacity=0.5] (0,0) rectangle (\partwidth,\partheight);
+    %% \end{bookcoverelement}
+    %% \begin{bookcoverelement}{tikz}{back typing area}
+    %%   \draw [fill=none, white, opacity=0.5] (0,0) rectangle (\partwidth,\partheight);
+    %% \end{bookcoverelement}
+    %% \begin{bookcoverelement}{tikz}{spine}
+    %%   \draw [fill=none, white, opacity=0.5] (0,0) rectangle (\partwidth,\partheight);
+    %% \end{bookcoverelement}
+    %% \begin{bookcoverelement}{tikz}{spine typing area}
+    %%   \draw [fill=none, white, opacity=0.5] (0,0) rectangle (\partwidth,\partheight);
+    %% \end{bookcoverelement}
+    %% END DEBUG
+
+    
+    \bookcovercomponent{center}{spine}{
+      \vspace{-31mm}
+      \addfontfeature{LetterSpace=45.0}
+      \rotatebox[origin=c]{-90}{\textcolor{yellow!80!white}{\Large
+        SCIENTIFIC~~PYTHON~~VOLUME~~II}}}
+    
+    \bookcovercomponent{normal}{spine typing area}[,,,181mm]{
+      \centering
+      \includegraphics[width=13mm]{./gravatar.png}
+    }
+    
+    \bookcovercomponent{normal}{front typing area}[,,,20mm]{
+      \centering
+      \addfontfeature{LetterSpace=52.0}
+      \textcolor{yellow!80!white}{\small SCIENTIFIC~~PYTHON~~VOLUME~~II}
+
+      \addfontfeature{LetterSpace=22.0}
+      \textcolor{white}{\Large \bfseries SCIENTIFIC VISUALIZATION}
+
+      \vspace{-1pt}
+      \addfontfeature{LetterSpace=65.0}
+      \textcolor{white}{\large PYTHON \& MATPLOTLIB}
+    }
+
+    \bookcovercomponent{normal}{front typing area}[,,,187mm]{
+      \centering
+      \addfontfeature{LetterSpace=25.0}
+      \textcolor{white}{NICOLAS~~P.~~ROUGIER}
+    }
+
+    \bookcovercomponent{normal}{back typing area}[,,,180mm]{
+      \setstretch{1.0}
+      \centering
+      \textcolor{white}{In memory of\\
+      \textbf{John D. Hunter}
+      \&
+      \textbf{Maxim Shemanarev}\\
+      Two brilliant minds that are dearly missed.}
+    }
+
+
+  \end{bookcover}
+\end{document}

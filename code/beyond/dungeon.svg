@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 640 640" width="640" height="640">
+  <defs/>
+  <metadata> Produced by OmniGraffle 7.18.5\n2021-08-11 14:14:05 +0000</metadata>
+  <g id="Canvas_1" stroke="none" fill="none" stroke-opacity="1" stroke-dasharray="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <rect fill="white" x="0" y="0" width="640" height="640"/>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_2">
+        <title>Bézier</title>
+        <path d="M 10 10 L 50 10 L 50 30 L 80 30 L 80 20 L 110 20 L 110 50 L 100 50 L 100 60 L 120 60 L 120 80 L 130 80 L 130 100 L 110 100 L 110 120 L 20 120 L 20 100 L 10 100 L 10 70 L 40 70 L 40 100 L 30 100 L 30 110 L 100 110 L 100 100 L 90 100 L 90 80 L 110 80 L 110 70 L 90 70 L 90 50 L 80 50 L 80 40 L 50 40 L 50 60 L 10 60 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,36 @@
+
+figure.figsize: 6,2.5
+
+axes.linewidth: 1
+axes.axisbelow: True
+axes.ymargin: 0.1
+axes.spines.bottom: True
+axes.spines.left: True
+axes.spines.right: False
+axes.spines.top: False
+font.sans-serif: Fira Sans Condensed
+
+axes.grid: False
+grid.color: black
+grid.linewidth: .1
+
+xtick.bottom: True
+xtick.top: False
+xtick.direction: out
+xtick.major.size: 5
+xtick.major.width: 1
+xtick.minor.size: 3
+xtick.minor.width: .5
+xtick.minor.visible: True
+
+ytick.left: True
+ytick.right: False
+ytick.direction: out
+ytick.major.size: 5
+ytick.major.width: 1
+ytick.minor.size: 3
+ytick.minor.width: .5
+ytick.minor.visible: True
+
+lines.linewidth: 2
+lines.markersize: 5

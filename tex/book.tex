@@ -1,0 +1,671 @@
+% \documentclass[10pt,a5paper]{book}
+\documentclass[10pt]{book}
+
+
+% --- Page layout -------------------------------------------------------------
+\usepackage[a5paper,includeheadfoot]{geometry}
+% \usepackage[pass,paperwidth=148mm,paperheight=210mm,includeheadfoot]{geometry}
+\geometry{right=15mm, left=20mm, top=15mm, bottom=15mm}
+
+\usepackage{xcolor}
+
+% --- ISBN --------------------------------------------------------------------
+\usepackage[ISBN=978-2-9579901-0-8,SC2]{ean13isbn}
+
+
+%% --- Hardcover book ---------------------------------------------------------
+\ifdefined\hardcover
+\usepackage[height=21.634truecm, width=15.434truecm, axes, pdftex, center]{crop}
+\definecolor{codecolor}{cmyk}{0, 0, 0, 1.0}
+\definecolor{stringcolor}{cmyk}{0, 0, 0, 0.8}
+\definecolor{commentcolor}{cmyk}{0, 0, 0, 0.5}
+\definecolor{admcolor}{cmyk}{0, 0, 0, 0.1}
+\definecolor{citecolor}{cmyk}{0, 0, 0, 1.0}
+\definecolor{linkcolor}{cmyk}{0, 0, 0, 1.0}
+\definecolor{urlcolor}{cmyk}{0, 0, 0,  0.8}
+
+\else
+%% --- Softcover book ---------------------------------------------------------
+\ifdefined\softcover
+\usepackage[height=21.6truecm, width=15.4truecm, axes, pdftex, center]{crop}
+\definecolor{codecolor}{cmyk}{0, 0, 0, 1.0}
+\definecolor{stringcolor}{cmyk}{0, 0, 0, 0.8}
+\definecolor{commentcolor}{cmyk}{0, 0, 0, 0.5}
+\definecolor{admcolor}{cmyk}{0, 0, 0, 0.1}
+\definecolor{citecolor}{cmyk}{0, 0, 0, 1.0}
+\definecolor{linkcolor}{cmyk}{0, 0, 0, 1.0}
+\definecolor{urlcolor}{cmyk}{0, 0, 0,  0.8}
+
+\else
+%% --- PDF book ---------------------------------------------------------
+\definecolor{codecolor}{HTML}{311b92}    %% Material Deep purple 900
+\definecolor{commentcolor}{HTML}{607d8b} %% Material Blue grey 500
+\definecolor{stringcolor}{HTML}{e65100}  %% Material Orange 900
+\definecolor{admcolor}{HTML}{fffde7}     %% Material Yellow 50
+\definecolor{citecolor}{HTML}{37474f}    %% Material Blue grey 800
+\definecolor{linkcolor}{HTML}{37474f}    %% Material Blue grey 800
+\definecolor{urlcolor}{HTML}{37474f}     %% Material Blue grey 800
+\fi
+\fi
+
+%% \DeclareGraphicsExtensions{.png,.pdf}
+
+
+
+% --- Specialized packages ----------------------------------------------------
+% \usepackage{ulem}     %% Strike-through font (\sout and \xout)
+\usepackage{enumitem} %% Fine control over itemize/enumerate/description
+\usepackage{multicol} %% Local multi-columns
+\usepackage{pdfpages} %% For inclusion of PDF (\includepdf)
+\usepackage{hologo}   %% Latex logos
+\usepackage{float}    %% Fine control of floats
+\usepackage{tikz}     %% Nice inline graphics
+\usepackage{alltt}    %% tt mode
+\usepackage{parskip}  %% tt mode
+\usepackage{amsmath}  %% math (equation)
+\usepackage{hologo}   %% Latex logos
+\usepackage{nicefrac} %% Nice (simple) fractions in math mode 
+
+
+
+% --- English stuff -----------------------------------------------------------
+\usepackage[english]{babel}
+\usepackage{xspace}
+% \usepackage{csquotes}
+
+% --- Graphics ----------------------------------------------------------------
+\usepackage{graphicx}
+\graphicspath{{../figures/}{../cover/}}
+\floatplacement{figure}{htb!} % (h)ere (t)op (b)ottom (p)age
+
+% Reduce Space Around Floats (Algorithm, Figures, etc) in Latex 
+\setlength\floatsep{1.\baselineskip plus 3pt minus 2pt}
+\setlength\textfloatsep{1.\baselineskip plus 3pt minus 2pt}
+\setlength\intextsep{1.\baselineskip plus 3pt minus 2 pt}
+% The First Line is for length between two adjacent floats
+% The Second Line -  for floats on top and bottom of text only
+%  For floats at top - length between float and text below it
+%  For floats at bottom - length between float and text above it
+%  The Third Line- for floats in the middle of text only -
+%     length between text above it, and text below it.
+
+
+% --- Header & footer ---------------------------------------------------------
+\usepackage{fancyhdr}
+\fancyhf{}
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\fancyhead[LE,RO]{\footnotesize\bfseries\sffamily \thepage}
+\fancyhead[RE]{\footnotesize\bfseries\sffamily \chaptername~\thechapter}
+\fancyhead[LO]{\footnotesize\bfseries\sffamily \leftmark}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+
+\fancypagestyle{frontmatter}{
+  \fancyhead[LE,RO]{\footnotesize\bfseries\sffamily \thepage}
+  \fancyhead[RE]{\footnotesize\bfseries\sffamily \leftmark}
+  \fancyhead[LO]{\footnotesize\bfseries\sffamily \leftmark}
+  \fancyfoot{}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+\fancypagestyle{backmatter}{
+  \fancyhead[LE,RO]{\footnotesize\bfseries\sffamily \thepage}
+  \fancyhead[RE]{\footnotesize\bfseries\sffamily \leftmark}
+  \fancyhead[LO]{\footnotesize\bfseries\sffamily \leftmark}
+  \fancyfoot{}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+\fancypagestyle{mainmatter}{
+  \fancyhead[LE,RO]{\footnotesize\bfseries\sffamily \thepage}
+  \fancyhead[RE]{\footnotesize\bfseries\sffamily \chaptername~\thechapter}
+  \fancyhead[LO]{\footnotesize\bfseries\sffamily \leftmark}
+  \fancyfoot{}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+\fancypagestyle{plain}{
+  \renewcommand{\headrulewidth}{0pt}
+  \fancyhf{}
+}
+\usepackage{emptypage} % No header & footer on empty pages
+
+
+% --- Fonts -------------------------------------------------------------------
+\usepackage{fontspec}
+\usepackage[babel=true]{microtype}
+%\defaultfontfeatures{Ligatures=TeX}
+\setmainfont{Source Serif Pro}[
+  Path = ../fonts/source-serif-pro/SourceSerifPro-, Extension = .otf,
+  Ligatures=TeX,
+  UprightFont= Light,
+  ItalicFont = LightIt,
+  BoldFont   = Regular,
+  BoldItalicFont = It ]
+\setsansfont{Roboto}[
+  Ligatures=TeX,
+  Path = ../fonts/roboto/Roboto-, Extension = .ttf,
+  UprightFont = Light,
+  ItalicFont = LightItalic,
+  BoldFont = Regular ]
+\setmonofont{Source Code Pro}[
+  Path = ../fonts/source-code-pro/SourceCodePro-, Extension = .otf,
+  UprightFont = Light,
+  BoldFont = Regular ]
+\newfontfamily\RobotoCon{Roboto Condensed}[
+  Path = ../fonts/roboto/RobotoCondensed-, Extension = .ttf,
+  Ligatures=TeX,
+  UprightFont = Regular,
+  ItalicFont = Italic,
+  BoldFont = Bold ]  
+\newfontfamily\Roboto{Roboto}[
+  Path = ../fonts/roboto/Roboto-, Extension = .ttf,
+  Ligatures=TeX,
+  UprightFont = Regular,
+  ItalicFont = Italic,
+  BoldFont = Black ]  
+
+
+% --- URL, href and colors ----------------------------------------------------
+% \usepackage{xcolor}
+%% \definecolor{darkred}{HTML}{CF232B}
+%% \definecolor{darkblue}{HTML}{000099}
+
+%% See https://tex.stackexchange.com/questions/75451/xcolor-black-isnt-black-enough
+% \definecolor{darkgray}{cmyk}{0,0,0,.8} %%{HTML}{555555}
+
+%% \definecolor{lightgray}{HTML}{cccccc}
+%\colorlet{citecolor}{black}
+%\colorlet{linkcolor}{black}
+% \colorlet{urlcolor}{darkblue}
+%\colorlet{urlcolor}{darkgray}
+
+\usepackage[
+  %%  pdfusetitle,
+  pdfauthor={Nicolas P. Rougier},
+  pdftitle={Scientific Visualization: Python & Matplotlib},
+  pdfsubject={Scientific Visualization},
+  pdfkeywords={Python, Matplotlib, Open Science, 42},
+  %%
+  bookmarks=true,
+  breaklinks=true,
+  pdfborder={0 0 0},
+  citecolor=citecolor,
+  linkcolor=linkcolor,
+  urlcolor=urlcolor,
+  colorlinks=true,
+  linktocpage=false,
+  hyperindex=true,
+  colorlinks=true,
+  linktocpage=false,
+  linkbordercolor=white]{hyperref}
+% \urlstyle{sf}
+\usepackage{bookmark}
+
+\newsavebox{\ExternalLinkIcon}
+
+\begin{lrbox}{\ExternalLinkIcon}
+  \begin{tikzpicture}[x=1.2ex, y=1.2ex, baseline=-0.5ex, scale=0.75]
+    \begin{scope}[x=1ex, y=1ex]
+      \clip (-0.1,-0.1)
+       --++ (-0, 1.2)
+       --++ (0.6, 0)
+       --++ (0, -0.6)
+       --++ (0.6, 0)
+       --++ (0, -1);
+      \path[draw=urlcolor, line width = 0.5,
+            rounded corners=0.5] (0,0) rectangle (1,1);
+    \end{scope}
+    \path[draw=urlcolor, line width = 0.5] (0.5, 0.5) -- (1, 1);
+    \path[draw=urlcolor, line width = 0.5] (0.6, 1)   -- (1, 1) -- (1, 0.6);
+  \end{tikzpicture}% <--- important!
+\end{lrbox}
+
+
+\makeatletter
+\def\cleartoevenpage{\clearpage\if@twoside \ifodd\c@page
+    \hbox{}\newpage\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother
+
+\newcommand{\fullpagefigure}[1]{
+   \cleartoevenpage
+   %% \begin{tikzpicture}[remember picture,overlay, shift={(current page.north west)}]
+   %%   \node[anchor=north west, xshift=-3mm, yshift=-23mm,inner sep=0pt]{
+   %%     \makebox[154mm][c]{\includegraphics[height=230mm]{#1}}};
+   %% \end{tikzpicture}
+\begin{tikzpicture}[remember picture,overlay, shift={(current page.center)}]
+  \node[anchor=center, xshift=0mm, yshift=0mm,inner sep=0pt]{
+    \includegraphics[height=220mm]{#1}};
+\end{tikzpicture}
+%   \begin{figure}[p]
+%       \vspace*{-4cm}
+%       \makebox[\linewidth]{
+%           \includegraphics[height=230mm]{#1}}
+%   \end{figure}
+   \clearpage
+   \vspace*{\fill} 
+}
+
+\newcommand{\pdfinclude}[2]{
+  \clearpage
+  \thispagestyle{empty}
+  \begin{tikzpicture}[remember picture,overlay, shift={(current page.center)}]
+    \node[anchor=center, xshift=0mm, yshift=0mm,inner sep=0pt]{
+      \includegraphics[height=#1]{#2}};
+  \end{tikzpicture}
+}
+
+% --- Pagination --------------------------------------------------------------
+\def\cleared{\empty}
+\def\cleartorecto{\clearpage\if at twoside \ifodd\c at page\else
+   \hbox{}\thispagestyle{cleared}%
+   \newpage\if at twocolumn\hbox{}\newpage\fi\fi\fi}
+\def\cleartoverso{\clearpage\if at twoside
+   \ifodd\c at page\hbox{}\thispagestyle{cleared}%
+   \newpage\if at twocolumn\hbox{}\newpage\fi\fi\fi}
+\def\clearchapter{\clearpage~\thispagestyle{empty}\mbox{}\cleartorecto}
+
+% --- Listings ----------------------------------------------------------------
+\usepackage{listings}
+
+
+\lstset{%
+  language=Python,
+  basicstyle=\ttfamily\footnotesize\color{codecolor},
+  keywordstyle=\color{codecolor}\bfseries,
+  commentstyle=\color{commentcolor},
+  identifierstyle=\color{codecolor},
+  stringstyle=\color{stringcolor},
+  backgroundcolor=\color{white},
+  numbers=none,
+  upquote=true,
+  numberstyle=\ttfamily,
+  stepnumber=2,
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  frame=none,
+  framerule=0.5pt,
+  tabsize=2,
+  rulesep=5em,
+  captionpos=b,
+  breaklines=true,
+  breakatwhitespace=false,
+  framexleftmargin=0em,
+  xleftmargin=0em,
+  framexrightmargin=0em,
+  xrightmargin=0em,
+  aboveskip=10pt,
+  belowskip=0pt,
+}
+
+% --- Bibliography ------------------------------------------------------------
+\usepackage[
+  backend=biber,
+  % style = numeric,
+  style=authoryear,
+  % refsection=chapter,
+  % backref=true,
+  % backrefstyle=three,
+  sorting = nyt,
+  giveninits = true,
+  maxcitenames=3,
+  mincitenames=1,
+  maxbibnames=10,
+  isbn = false,
+  url = false,
+  doi = false,
+  natbib = true]{biblatex}
+\usepackage{bibentry}
+
+% Some space between items
+\setlength\bibitemsep{.5\baselineskip}
+
+% Small font for bib entries
+\renewcommand*{\bibfont}{\small \sffamily}
+\addbibresource{book.bib}
+
+% Make sure rightmark and leftmark are right
+\defbibheading{bibliography}[\bibname]{%
+  \chapter{#1}%
+  \markboth{References}{References}}
+
+% Make bib entry title clickable
+\newcommand{\doiorurl}{%
+  \iffieldundef{doi}
+    {\iffieldundef{url}
+       {}
+       {\strfield{url}}}
+    {http://dx.doi.org/\strfield{doi}}%
+}
+\newcommand{\myhref}[1]{%
+ \ifboolexpr{%
+   test {\ifhyperref}
+   and not test {\iftoggle{bbx:url}}
+   and not test {\iftoggle{bbx:doi}}
+  }
+  {\href{\doiorurl}{#1}}
+  {#1}%
+}
+\DeclareFieldFormat{title}{\myhref{\mkbibemph{#1}}}
+\DeclareFieldFormat
+  [article,inbook,incollection,inproceedings,patent,thesis,unpublished]
+  {title}{\myhref{\mkbibquote{#1\isdot}}}
+
+% Add abstract when available
+\DeclareFieldFormat{abstract}{\par\footnotesize#1}
+\renewbibmacro*{finentry}{\printfield{abstract}\finentry}
+
+
+% --- Captions ----------------------------------------------------------------
+\usepackage[labelsep=newline,singlelinecheck=false]{caption}
+\renewcommand{\captionfont}{\small}
+\renewcommand{\captionlabelfont}{\small\sffamily\bfseries}
+
+
+% --- Style --------------------------------------------------------------------
+%% Default itemize aspect
+\setlist[itemize]{leftmargin=*, noitemsep, topsep=5pt}
+\setlist[description]{font=\bfseries\sffamily,labelindent=0pt, leftmargin=15pt}
+
+%% No indent on paragraph
+\setlength\parindent{0pt}
+
+%% A more versatile quoting environment
+\usepackage[font={small},vskip=5pt,leftmargin=0pt,rightmargin=0pt]{quoting}
+
+
+
+% --- Part, chapter and sections ----------------------------------------------
+\usepackage{titlesec}
+\titleformat{\part}
+  {\large\bfseries\sffamily}{\thepart}{1em}{}
+% this alters "before" spacing (the second length argument) to 0
+\titlespacing*{\part}{0pt}{-15pt}{100pt}
+
+\titleformat{\chapter}
+  {\large\bfseries\sffamily}{\thechapter}{1em}{}
+% this alters "before" spacing (the second length argument) to 0
+\titlespacing*{\chapter}{0pt}{-15pt}{100pt}
+
+\titleformat{name=\chapter,numberless}
+  {\large\bfseries\sffamily}{}{1em}{}
+% this alters "before" spacing (the second length argument) to 0
+\titlespacing*{name=\chapter, numberless}{0pt}{-15pt}{100pt}
+
+\titleformat{\section}
+  {\normalfont\bfseries\sffamily}{}{0em}{}
+\titlespacing*{\section}{0pt}{10pt}{10pt}
+
+
+% --- Table of content --------------------------------------------------------
+% ToC font
+\usepackage{tocloft}
+\renewcommand{\cftpartfont}{\normalfont\sffamily\bfseries}
+\renewcommand{\cftchapfont}{\normalfont\small\sffamily}
+\renewcommand{\cftsecfont}{\normalfont\sffamily}
+\renewcommand{\cftsubsecfont}{\normalfont\sffamily}
+\renewcommand{\cftsubsubsecfont}{\normalfont\sffamily}
+\renewcommand{\cfttoctitlefont}{\large\sffamily\bfseries}
+\cftpagenumbersoff{part}
+\renewcommand\cftpartafterpnum{\vskip 0pt}
+\renewcommand\cftchapafterpnum{\vskip -10pt}
+
+
+% --- Macros ------------------------------------------------------------------
+\newcommand*\cleartoleftpage{%
+  \clearpage
+  \ifodd\value{page}\hbox{}\newpage\fi
+}
+
+
+% --- Docutils ----------------------------------------------------------------
+\usepackage{booktabs}
+\usepackage{longtable,ltcaption,array}
+\newlength{\DUtablewidth} % internal use in tables
+\providecommand*{\DUrole}[2]{{\csname #1\endcsname {#2}}}
+\providecommand*{\DUlegend}[2]{#2}
+\newcommand{\code}[1]{\ttfamily\small\color{darkgray} {#1}}
+\newcommand{\source}[1]{\href{https://github.com/rougier/scientific-visualization-book/blob/master/code/#1}{#1}}
+
+
+
+% class handling for environments (block-level elements)
+% \begin{DUclass}{spam} tries \DUCLASSspam and
+% \end{DUclass}{spam} tries \endDUCLASSspam
+\ifx\DUclass\undefined % poor man's "provideenvironment"
+ \newenvironment{DUclass}[1]%
+  {\def\DocutilsClassFunctionName{#1}% arg cannot be used in end-part of environment.
+     \csname \DocutilsClassFunctionName \endcsname}%
+  {\csname end\DocutilsClassFunctionName \endcsname}%
+\fi
+
+
+%%% Fallback definitions for Docutils-specific commands
+% numeric or symbol footnotes with hyperlinks
+\providecommand*{\DUfootnotemark}[3]{%
+  \raisebox{1em}{\hypertarget{#1}{}}%
+  \hyperlink{#2}{\textsuperscript{#3}}%
+}
+\providecommand{\DUfootnotetext}[4]{%
+  \begingroup%
+  \renewcommand{\thefootnote}{%
+    \protect\raisebox{1em}{\protect\hypertarget{#1}{}}%
+    \protect\hyperlink{#2}{#3}}%
+  \footnotetext{#4}%
+  \endgroup%
+}
+
+\renewenvironment{quote}{}{}
+  
+\newenvironment{epigraph}{\thispagestyle{empty}
+  \vspace*{\stretch{1}} % some space at the top
+  \itshape              % the text is in italics
+%  \raggedleft
+  \small}{\vspace{\stretch{3}}
+  \cleardoublepage}
+
+\usepackage[framemethod=TikZ]{mdframed}
+\mdfdefinestyle{Highlights}{%
+    fontcolor=black,
+    linecolor=white,
+    outerlinewidth=0.0pt,
+    roundcorner=3pt,
+    innertopmargin=.5\baselineskip,
+    innerbottommargin=.5\baselineskip,
+    innerrightmargin=5pt,
+    innerleftmargin=5pt,
+    backgroundcolor=admcolor,
+    skipabove=10pt,
+}
+
+\newenvironment{highlights}{\begin{mdframed}[style=Highlights]\small }{\end{mdframed}}
+% \newenvironment{warning}{\begin{mdframed}[style=Highlights]\small }{\end{mdframed}}
+
+% admonition (specially marked topic)
+\providecommand{\DUadmonition}[2][class-arg]{%
+  % try \DUadmonition#1{#2}:
+  \ifcsname DUadmonition#1\endcsname%
+    \csname DUadmonition#1\endcsname{#2}%
+  \else
+%    \begin{center}
+  %      \fbox{\parbox{1.0\linewidth}{\small #2}}
+  \begin{mdframed}[style=Highlights]\small #2 \end{mdframed}
+%    \end{center}
+  \fi
+}
+
+% title for topics, admonitions, unsupported section levels, and sidebar
+\providecommand*{\DUtitle}[2][class-arg]{%
+  % call \DUtitle#1{#2} if it exists:
+  \ifcsname DUtitle#1\endcsname%
+    \csname DUtitle#1\endcsname{#2}%
+  \else
+    % \smallskip\noindent\textbf{#2}\smallskip%
+    % \textbf{#2}
+    {}
+  \fi
+}
+
+
+\let\originalltt\alltt
+\let\originendalltt\endalltt
+
+\renewenvironment{alltt}{\originalltt \footnotesize}{\originendalltt}
+\let\orighref\href
+
+\ifdefined\hardcover
+\else
+\ifdefined\softdcover
+\else
+\renewcommand*{\href}[2]{\orighref{#1}{#2\,\usebox{\ExternalLinkIcon}}}
+\fi
+\fi
+
+% -----------------------------------------------------------------------------
+\title{ {\sffamily \bfseries Scientific Visualisation}\\
+        {\Large \sffamily Python \& Matplotlib} }
+\author{\normalsize \scshape Nicolas P. Rougier}
+\date{~\vfill \small \scshape Scientific Python -- Volume II}
+
+%\raggedbottom
+\flushbottom 
+\begin{document}
+
+% -----------------------------------------------------------------------------
+\frontmatter \pagestyle{frontmatter}
+% -----------------------------------------------------------------------------
+
+%% --- Softcover book ---------------------------------------------------------
+\ifdefined\hardcover
+   \thispagestyle{empty} \mbox{}
+   \else
+
+%% --- Softcover book ---------------------------------------------------------
+\ifdefined\softcover
+\thispagestyle{empty} \mbox{}
+
+
+%% --- PDF book ---------------------------------------------------------
+\else
+   \pdfinclude{216mm}{front-cover.pdf}
+
+%% \thispagestyle{empty}
+%% \mbox{}
+%% \newpage
+
+%% \thispagestyle{empty}
+%% \mbox{}
+%% \newpage
+
+   \fi
+\fi
+   
+\newpage
+
+%% \thispagestyle{empty}
+%% \mbox{}
+%% \newpage
+
+%% \thispagestyle{empty}
+%% \mbox{}
+%% \newpage
+
+\input{copyright}
+\maketitle
+
+\newpage
+\ % The empty page
+\newpage
+\input{00-dedication}
+
+\clearpage
+\vspace*{-60pt}
+\setcounter{tocdepth}{0}
+\tableofcontents
+\addtocontents{toc}{\vspace{50pt}}
+
+\newpage
+\ % The empty page
+\newpage
+
+\input{00-preface}
+
+\newpage
+\ % The empty page
+\newpage
+
+\input{00-acknowledgments}
+
+\newpage
+\ % The empty page
+\newpage
+\input{00-introduction}
+
+% -----------------------------------------------------------------------------
+\mainmatter \pagestyle{mainmatter}
+% -----------------------------------------------------------------------------
+
+\input{main}
+
+% -----------------------------------------------------------------------------
+\backmatter \pagestyle{backmatter}
+% -----------------------------------------------------------------------------
+
+\chapter{Bibliography \label{chap-bibliography}}
+\nocite{*}
+% \printbibliography[title=Bibliography,heading=bibliography]
+\printbibliography[heading=none]
+\newpage
+
+% Empty page
+\thispagestyle{empty}
+\mbox{}
+\newpage
+
+\vspace*{\fill}
+
+%% \begin{footnotesize}
+%% \noindent Achevé d’imprimer en Novembre 2021 en France par Pumbo pour le compte
+%% de Nicolas P. Rougier, Bordeaux.\\
+%% Dépôt légal : Novembre 2021.
+%% \end{footnotesize}
+
+%% % Empty page
+%% \thispagestyle{empty}
+%% \mbox{}
+%% \newpage
+
+
+% Empty page
+%% \thispagestyle{empty}
+%% \mbox{}
+%% \newpage
+
+% Empty page
+%% \thispagestyle{empty}
+%% \mbox{}
+%% \cleartoleftpage
+
+
+
+%% --- Softcover book ---------------------------------------------------------
+\ifdefined\hardcover
+   \thispagestyle{empty} \mbox{}
+   \else
+
+%% --- Softcover book ---------------------------------------------------------
+\ifdefined\softcover
+\thispagestyle{empty} \mbox{}
+
+
+%% --- PDF book ---------------------------------------------------------
+\else
+   \pdfinclude{216mm}{back-cover.pdf}
+\fi
+\fi
+
+
+\end{document}
+

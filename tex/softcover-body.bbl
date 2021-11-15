@@ -1,0 +1,290 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{Butterick:2013}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=15906aa9ea8f28e899c6d015206420ca}{%
+           family={Butterick},
+           familyi={B\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Online}%
+      }
+      \strng{namehash}{15906aa9ea8f28e899c6d015206420ca}
+      \strng{fullhash}{15906aa9ea8f28e899c6d015206420ca}
+      \strng{bibnamehash}{15906aa9ea8f28e899c6d015206420ca}
+      \strng{authorbibnamehash}{15906aa9ea8f28e899c6d015206420ca}
+      \strng{authornamehash}{15906aa9ea8f28e899c6d015206420ca}
+      \strng{authorfullhash}{15906aa9ea8f28e899c6d015206420ca}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{$\bullet$$\bullet$$\bullet$ This open access book will make you a better typographer. I’m not here to tell you that typography is more important than the substance of your writing. It’s not. But typography can enhance your writing. Typography can create a better first impression. Typography can reinforce your key points. Typography can extend reader attention.}
+      \field{title}{Practical Typography}
+      \field{year}{2013}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://practicaltypography.com/
+      \endverb
+      \verb{url}
+      \verb https://practicaltypography.com/
+      \endverb
+    \endentry
+    \entry{Hunter:2007}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a2f53dcc6bb05a06b8ad94176f80fe26}{%
+           family={Hunter},
+           familyi={H\bibinitperiod},
+           given={John\bibnamedelima D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers ({IEEE})}%
+      }
+      \strng{namehash}{a2f53dcc6bb05a06b8ad94176f80fe26}
+      \strng{fullhash}{a2f53dcc6bb05a06b8ad94176f80fe26}
+      \strng{bibnamehash}{a2f53dcc6bb05a06b8ad94176f80fe26}
+      \strng{authorbibnamehash}{a2f53dcc6bb05a06b8ad94176f80fe26}
+      \strng{authornamehash}{a2f53dcc6bb05a06b8ad94176f80fe26}
+      \strng{authorfullhash}{a2f53dcc6bb05a06b8ad94176f80fe26}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computing in Science {\&} Engineering}
+      \field{number}{3}
+      \field{title}{Matplotlib: A 2D Graphics Environment}
+      \field{volume}{9}
+      \field{year}{2007}
+      \true{nocite}
+      \field{pages}{90\bibrangedash 95}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/mcse.2007.55
+      \endverb
+    \endentry
+    \entry{Rougier:2017}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=75c00f0c05731e74db1167b4a8fe5936}{%
+           family={Rougier},
+           familyi={R\bibinitperiod},
+           given={Nicolas\bibnamedelima P.},
+           giveni={N\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Zenodo}%
+      }
+      \strng{namehash}{75c00f0c05731e74db1167b4a8fe5936}
+      \strng{fullhash}{75c00f0c05731e74db1167b4a8fe5936}
+      \strng{bibnamehash}{75c00f0c05731e74db1167b4a8fe5936}
+      \strng{authorbibnamehash}{75c00f0c05731e74db1167b4a8fe5936}
+      \strng{authornamehash}{75c00f0c05731e74db1167b4a8fe5936}
+      \strng{authorfullhash}{75c00f0c05731e74db1167b4a8fe5936}
+      \field{extraname}{1}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{$\bullet$$\bullet$ There are a lot of techniques that you don't find in books and such techniques are mostly learned through experience. The goal of this open access book is to explain some of these techniques and to provide an opportunity for making this experience in the process.}
+      \field{title}{{From Python to Numpy}}
+      \field{year}{2017}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.labri.fr/perso/nrougier/from-python-to-numpy/
+      \endverb
+      \verb{url}
+      \verb https://www.labri.fr/perso/nrougier/from-python-to-numpy/
+      \endverb
+    \endentry
+    \entry{Rougier:2018}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=75c00f0c05731e74db1167b4a8fe5936}{%
+           family={Rougier},
+           familyi={R\bibinitperiod},
+           given={Nicolas\bibnamedelima P.},
+           giveni={N\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Frontiers Media {SA}}%
+      }
+      \strng{namehash}{75c00f0c05731e74db1167b4a8fe5936}
+      \strng{fullhash}{75c00f0c05731e74db1167b4a8fe5936}
+      \strng{bibnamehash}{75c00f0c05731e74db1167b4a8fe5936}
+      \strng{authorbibnamehash}{75c00f0c05731e74db1167b4a8fe5936}
+      \strng{authornamehash}{75c00f0c05731e74db1167b4a8fe5936}
+      \strng{authorfullhash}{75c00f0c05731e74db1167b4a8fe5936}
+      \field{extraname}{2}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{3}
+      \field{title}{A Density-Driven Method for the Placement of Biological Cells Over Two-Dimensional Manifolds}
+      \field{volume}{12}
+      \field{year}{2018}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.3389/fninf.2018.00012
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.3389/fninf.2018.00012
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.3389/fninf.2018.00012
+      \endverb
+    \endentry
+    \entry{Rougier:2014}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=75c00f0c05731e74db1167b4a8fe5936}{%
+           family={Rougier},
+           familyi={R\bibinitperiod},
+           given={Nicolas\bibnamedelima P.},
+           giveni={N\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4778156ee049a7c63b5dfde9beea6d36}{%
+           family={Droettboom},
+           familyi={D\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e8f011b361a44c99e0b3cd105b7553dc}{%
+           family={Bourne},
+           familyi={B\bibinitperiod},
+           given={Philip\bibnamedelima E.},
+           giveni={P\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Public Library of Science ({PLoS})}%
+      }
+      \strng{namehash}{7a77fd6d2261e11e7d0213e48ac6d76b}
+      \strng{fullhash}{7a77fd6d2261e11e7d0213e48ac6d76b}
+      \strng{bibnamehash}{7a77fd6d2261e11e7d0213e48ac6d76b}
+      \strng{authorbibnamehash}{7a77fd6d2261e11e7d0213e48ac6d76b}
+      \strng{authornamehash}{7a77fd6d2261e11e7d0213e48ac6d76b}
+      \strng{authorfullhash}{7a77fd6d2261e11e7d0213e48ac6d76b}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{$\bullet$$\bullet$$\bullet$ This classic and popular article provides a basic set of rules to improve figure design and explain some of the common pitfalls.}
+      \field{journaltitle}{{PLoS} Computational Biology}
+      \field{number}{9}
+      \field{title}{{Ten Simple Rules for Better Figures}}
+      \field{volume}{10}
+      \field{year}{2014}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.1371/journal.pcbi.1003833
+      \endverb
+    \endentry
+    \entry{Vanderplas:2016}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0fd9a0e34f1b2adda41357c948d14986}{%
+           family={VanderPlas},
+           familyi={V\bibinitperiod},
+           given={Jake},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly}%
+      }
+      \strng{namehash}{0fd9a0e34f1b2adda41357c948d14986}
+      \strng{fullhash}{0fd9a0e34f1b2adda41357c948d14986}
+      \strng{bibnamehash}{0fd9a0e34f1b2adda41357c948d14986}
+      \strng{authorbibnamehash}{0fd9a0e34f1b2adda41357c948d14986}
+      \strng{authornamehash}{0fd9a0e34f1b2adda41357c948d14986}
+      \strng{authorfullhash}{0fd9a0e34f1b2adda41357c948d14986}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{$\bullet$$\bullet$ This book is meant to help Python users learn to use Python's data science stack–libraries such as IPython, NumPy, Pandas, Matplotlib, Scikit-Learn, and related tools–to effectively store, manipulate, and gain insight from data.}
+      \field{title}{{Python Data Science Handbook}}
+      \field{year}{2016}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://jakevdp.github.io/PythonDataScienceHandbook/index.html
+      \endverb
+      \verb{url}
+      \verb https://jakevdp.github.io/PythonDataScienceHandbook/index.html
+      \endverb
+    \endentry
+    \entry{Wilke:2019}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8e86aa1915156f8016600d977acef303}{%
+           family={Wilke},
+           familyi={W\bibinitperiod},
+           given={Claus\bibnamedelima O.},
+           giveni={C\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly}%
+      }
+      \strng{namehash}{8e86aa1915156f8016600d977acef303}
+      \strng{fullhash}{8e86aa1915156f8016600d977acef303}
+      \strng{bibnamehash}{8e86aa1915156f8016600d977acef303}
+      \strng{authorbibnamehash}{8e86aa1915156f8016600d977acef303}
+      \strng{authornamehash}{8e86aa1915156f8016600d977acef303}
+      \strng{authorfullhash}{8e86aa1915156f8016600d977acef303}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{$\bullet$$\bullet$ This open access book takes you through many commonly encountered visualization problems, and it provides guidelines on how to turn large datasets into clear and compelling figures.}
+      \field{title}{Fundamentals of Data Visualization}
+      \field{year}{2019}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://serialmentor.com/dataviz/
+      \endverb
+      \verb{url}
+      \verb https://serialmentor.com/dataviz/
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
