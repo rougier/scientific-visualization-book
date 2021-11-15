@@ -40,7 +40,6 @@ future work on Python (and
 * [Matplotlib cheat sheets](https://github.com/matplotlib/cheatsheets)
 
 
-
 ### Book gallery
 
 <img src="images/contour-dropshadow.png" width="31%"/> <img src="images/domain-coloring.png" width="31%"/> <img src="images/metropolis.png" width="31%"/>
