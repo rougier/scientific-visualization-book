@@ -7,7 +7,9 @@ The Python scientific visualisation landscape is huge. It is composed of a myria
 
 ### Read the book
 
-You can read the book **[PDF](pdf/book.pdf)** (95Mo) that is open access and hosted on GitHub. Sources for the book (including code examples)
+You can read the book **[PDF](https://hal.inria.fr/hal-03427242/document)** (95Mo, preferred site) that is open access and hosted on
+[HAL](https://hal.archives-ouvertes.fr/) which is a French open
+archive for academics. Up to date version is also available on GitHub [here](pdf/book.pdf). Sources for the book (including code examples)
 are available at
 [github.com/rougier/scientific-visualization-book](https://github.com/rougier/scientific-visualization-book).  
 
