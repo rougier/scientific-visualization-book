@@ -30,6 +30,8 @@ future work on Python (and
 <a href="https://github.com/sponsors/rougier/sponsorships?sponsor=rougier&tier_id=108712&preview=false"><img src="https://img.shields.io/badge/-25$/Mo-red.svg?style=flat-square&logo=github"/><a/> 
 <a href="https://en.liberapay.com/rougier/donate"><img src="https://img.shields.io/badge/-PATRON/Week-green.svg?style=flat-square&logo=liberapay&logoColor=white"/><a/> 
 
+If you don't want to spend money, you can simply [nominate me](https://stars.github.com/nominate/) for the GitHub stars program if you find my work useful for the community.
+
 
 ### See also
 
