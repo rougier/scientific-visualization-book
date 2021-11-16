@@ -50,7 +50,7 @@ In many cases, this can be further compacted using the subplots_ method.
 .. code:: python
    
    fig, ax = plt.subplots(figsize=(6,6),
-                          subplot_kw={"aspect"=1})
+                          subplot_kw={"aspect": 1})
    ax.plot(range(10))
    plt.show()
    
