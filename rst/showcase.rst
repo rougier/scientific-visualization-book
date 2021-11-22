@@ -41,7 +41,7 @@ functions" `[Wikipedia]
 the left, I represented the imaginary function :math:`z +
 \nicefrac{1}{z}` in the domain :math:`[-2.5, 2.5]^2`. I used the angle
 of the (complex) result for setting the color and the absolute cosine
-the norm for modulating it periodically.  I could have used a cyclic
+of the norm for modulating it periodically.  I could have used a cyclic
 colormap such as `twilight` but I think the `Spectral` is visually
 more pleasant, even though it induces some discontinuities. To draw
 the grid, I used a contour plot using integer values in the real and
