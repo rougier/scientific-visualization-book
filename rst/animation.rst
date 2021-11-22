@@ -288,7 +288,7 @@ coordinates will be automatically transformed (by cartopy).
    :width: 100%
 
    Earthquakes still (July 23, 2021 at 11am CET)
-   :label:`figure-animation-earthquakes
+   :label:`figure-animation-earthquakes`
    (sources: :source:`animation/earthquakes.py`).
 
 
