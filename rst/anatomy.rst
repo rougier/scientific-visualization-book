@@ -80,7 +80,7 @@ Figure_:
 Axes_:
   This is the second most important element that corresponds to the actual area
   where your data will be rendered. It is also called a subplot. You can have
-  have one to many axes per figure and each is usually surrounded by four edges
+  one to many axes per figure and each is usually surrounded by four edges
   (left, top, right and bottom) that are called **spines**. Each of these
   spines can be decorated with major and minor **ticks** (that can point inward
   or outward), **tick labels** and a **label**. By default, matplotlib
