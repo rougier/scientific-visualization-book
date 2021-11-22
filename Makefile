@@ -49,6 +49,11 @@ pdf: $(DEPS) $(TEX_DIR)/front-cover.pdf $(TEX_DIR)/back-cover.pdf
 	@latexmk -pdfxe -cd -bibtex -shell-escape -silent -jobname="book" -pretex="" -use-make -usepretex $(TEX_DIR)/book.tex
 	@cp $(TEX_DIR)/book.pdf $(PDF_DIR)
 
+pdf-compressed: pdf
+	@gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.5 -dPDFSETTINGS=/prepress -dNOPAUSE -dQUIET -dBATCH -sOutputFile=$(PDF_DIR)/book-compressed.pdf $(PDF_DIR)/book.pdf
+
+
+
 # Build front cover from the hardcover 
 front-cover: softcover-cover
 	@latexmk -cd -silent -pdf -use-make $(TEX_DIR)/front-cover.tex 
