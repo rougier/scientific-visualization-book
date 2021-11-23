@@ -310,7 +310,7 @@ enquiry about the produced image, we get:
    
 .. code:: bash
 
-   $ identify output.png
+   $ identify -verbose output.png
    Image: output.png
      Format: PNG (Portable Network Graphics)
      Mime type: image/png
