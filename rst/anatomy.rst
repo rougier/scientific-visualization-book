@@ -385,7 +385,7 @@ remain the same. Usage is really simple:
 
    import ruler
    import numpy as np
-   import matplotlb.pyplot as plt
+   import matplotlib.pyplot as plt
           
    fig,ax = plt.subplots()
    ruler = ruler.Ruler(fig)
