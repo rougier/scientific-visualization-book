@@ -12,7 +12,7 @@ from matplotlib.transforms import Affine2D
 import mpl_toolkits.axisartist.floating_axes as floating_axes
 
 
-# Reroducibility seed
+# Reproducibility seed
 np.random.seed(123)
 
 # Generate some data

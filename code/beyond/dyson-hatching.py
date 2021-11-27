@@ -31,7 +31,7 @@ P = bluenoise.generate((10, 10), radius=0.5)
 # Voronoi cells
 V = scipy.spatial.Voronoi(P)
 
-# Sorted distances between pojnts
+# Sorted distances between points
 D = scipy.spatial.distance.cdist(P, P)
 D.sort(axis=1)
 

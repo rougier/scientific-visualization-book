@@ -11,7 +11,7 @@ from matplotlib.collections import LineCollection
 from matplotlib.patches import Polygon, Ellipse
 import bluenoise
 
-# This is important because "cities" have been manually positionned
+# This is important because "cities" have been manually positioned
 np.random.seed(1)
 
 
