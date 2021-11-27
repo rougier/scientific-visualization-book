@@ -251,8 +251,8 @@ in interactive mode (figure is updated after each matplotlib command):
    plt.xlabel("X Axis") # Label is updated
    plt.ioff()           # Interactive mode off
    
-If you want to know more on backends, you can have a look at the `introductory
-tutorial <https://matplotlib.org/tutorials/introductory/usage.html#backends>`__
+If you want to know more on backends, you can have a look at the `matplotlib
+user guide <https://matplotlib.org/stable/users/explain/backends.html>`__
 on the matplotlib website.
 
 
