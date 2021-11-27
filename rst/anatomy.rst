@@ -224,7 +224,7 @@ vector format and vice-versa.
    :source:`anatomy/raster-vector.py`). :label:`fig-raster-vector`
 
 If you want to have some interaction with your figure, you have to combine one
-of the available interface (see table :ref:`table-interfaces`) with a
+of the available interfaces (see table :ref:`table-interfaces`) with a
 renderer. For example `GTK3Cairo` or `WebAgg`.
 
 
