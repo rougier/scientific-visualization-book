@@ -3,6 +3,9 @@
 # Author:  Nicolas P. Rougier
 # License: BSD
 # ----------------------------------------------------------------------------
+# Comment: Nicolas P. Rougier & Jehyun Lee
+# kr & en: https://jehyunlee.github.io/2021/12/02/Python-DS-92-rougier01/
+# ----------------------------------------------------------------------------
 # Illustrate rotated & translated axis (using axisartists toolkit)
 # ----------------------------------------------------------------------------
 import numpy as np
@@ -105,8 +108,8 @@ h0 = w0 = np.sqrt((xo - x) ** 2 + (yo - y) ** 2)    # preparation of the histogr
 # 3. Create the secondary axis
 #    Warning: it must be squared, ie. xmax-xmin = ymax-ymin
 #    It is possible to have non squared axis, but it would complicate things.
-xmin, xmax = -16, 16
-ymin, ymax = 0, xmax - xmin
+xmin, xmax = -16, 16                               # "enough" large symmetric x limits for histogram
+ymin, ymax = 0, xmax - xmin                        # y limits, same range but positive
 transform = Affine2D().rotate_deg(-rotation)
 helper = floating_axes.GridHelperCurveLinear(transform, (xmin, xmax, ymin, ymax))
 ax2 = floating_axes.FloatingSubplot(fig, 111, grid_helper=helper, zorder=0)
@@ -140,9 +143,9 @@ ax2.set_xticks([0, 1])
 ax2.patch.set_visible(False)
 
 # 6. Display the histogram, taking care of the extents of the X axis
-counts, bins = np.histogram(-Z1 @ PC1, bins=12)
-X = (bins - bins[0]) / (bins[-1] - bins[0])
-X = xmin + (xmax - xmin) * X
+counts, bins = np.histogram(-Z1 @ PC1, bins=12)     # histogram of -Z1 orthogonal to PC1 direction with 12 bins
+X0 = (bins - bins[0]) / (bins[-1] - bins[0])        # X0 : normalized bins range [0, 1]
+X = xmin + (xmax - xmin) * X                        # X1 : stretched bins range [xmin, xmax] = [-16, 16]
 Y = np.array(counts)
 
 # This auxiliary axis is necessary to draw stuff (no real idea why)
@@ -161,7 +164,7 @@ for x, y in zip(X, Y):
         ha="center",
         va="center",
         size=8,
-        rotation=rotation - 90,
+        rotation=-rotation,
     )
 
 # Save
