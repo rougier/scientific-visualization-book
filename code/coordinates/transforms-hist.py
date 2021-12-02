@@ -145,18 +145,18 @@ ax2.patch.set_visible(False)
 # 6. Display the histogram, taking care of the extents of the X axis
 counts, bins = np.histogram(-Z1 @ PC1, bins=12)     # histogram of -Z1 orthogonal to PC1 direction with 12 bins
 X0 = (bins - bins[0]) / (bins[-1] - bins[0])        # X0 : normalized bins range [0, 1]
-X = xmin + (xmax - xmin) * X                        # X1 : stretched bins range [xmin, xmax] = [-16, 16]
+X1 = xmin + (xmax - xmin) * X0                      # X1 : stretched bins range [xmin, xmax] = [-16, 16]
 Y = np.array(counts)
 
 # This auxiliary axis is necessary to draw stuff (no real idea why)
 ax2_aux = ax2.get_aux_axes(transform)
 
 # Plotting histogram 
-ax2_aux.hist(X[:-1], X, weights=Y, facecolor="C0", edgecolor="white", linewidth=0.25)
+ax2_aux.hist(X1[:-1], X1, weights=Y, facecolor="C0", edgecolor="white", linewidth=0.25)
 
 # 7. Adding some labels
-dx, dy = (X[1] - X[0]) / 2, 0.75
-for x, y in zip(X, Y):
+dx, dy = (X1[1] - X1[0]) / 2, 0.75
+for x, y in zip(X1, Y):
     ax2_aux.text(
         x + dx,
         y + dy,
