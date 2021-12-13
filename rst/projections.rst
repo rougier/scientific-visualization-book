@@ -52,9 +52,9 @@ in data space is the same as in figure space modulo a given factor (see
    4.185
    >>> print( (transform(P2)-transform(P1))[0] )
    41.85
-   >>> print( (transform(P1)-transform(P0))[0] )
+   >>> print( (transform(P3)-transform(P2))[0] )
    418.5
-   
+
 Logarithmic scale (log_) is a nonlinear scale where, instead of increasing in equal
 increments, each interval is increased by a factor of the base of the logarithm
 (hence the name). Log scales are used for values that are strictly positive since
@@ -74,31 +74,31 @@ distances are the same:
    155.0
    >>> print( (transform(P2)-transform(P1))[0] )
    155.0
-   >>> print( (transform(P1)-transform(P0))[0] )
+   >>> print( (transform(P3)-transform(P2))[0] )
    155.0
 
 If your data has negative values, you have to use a symmetric log scale (symlog_)
 that is a composition of both a linear and a logarithmic scale. More precisely,
 values around 0 use a linear scale and values outside the vicinity of zero uses
 a logarithmic scale. You can of course specify the extent of the linear zone
-when you set the scale. The logit_ scale is used for values in the range ]0,1[
+when you set the scale. The logit_ scale is used for values in the range [0,1]
 and uses a logarithmic scale on the "border" and a quasi-linear scale in the
 middle (around 0.5). If none of these scales suit your needs, you still have
 the option to define your own custom scale:
 
 .. code:: python
-          
+
    def forward(x):
        return x**(1/2)
    def inverse(x):
        return x**2
-       
+
    ax.set_xscale('function', functions=(forward, inverse))
 
 In such case, you have to provide both the forward and inverse function that
 allows to transform your data. The inverse function is used when displaying
 coordinates under the mouse pointer.
-   
+
 .. figure:: scales-projections/scales-custom.pdf
    :width: 100%
 
@@ -108,7 +108,7 @@ coordinates under the mouse pointer.
 Finally, if you need a custom scale with complex transforms, you may need to
 write a proper scale object as it is explained on the `matplotlib documentation
 <https://matplotlib.org/gallery/scales/custom_scale.html>`_.
-          
+
 Projections
 -----------
 
@@ -131,7 +131,7 @@ and straightforward way to use is to specify the projection when you create an
 axis:
 
 .. code:: Python
-          
+
    ax = plt.subplot(1, 1, 1, projection='polar')
 
 This axis is now equipped with a polar projection. This means that any plotting
@@ -141,7 +141,7 @@ transformation must specify how to go from polar coordinates :math:`(\rho,
 \theta)` to Cartesian coordinates :math:`(x,y) = (\rho cos(\theta), \rho
 sin(\theta))`. When you declare a polar axis, you can specify limits of the axis
 as we've done previously but we have also some dedicated settings such as
-`set_thetamin`, `set_thetamax`, `set_rmin`, `set_rmax` and more specifically 
+`set_thetamin`, `set_thetamax`, `set_rmin`, `set_rmax` and more specifically
 `set_rorigin`. This allows you to have fine control over what is actually shown as illustrated on the figure :ref:`figure-projection-polar-config`.
 
 .. figure:: scales-projections/projection-polar-config.pdf
@@ -150,7 +150,7 @@ as we've done previously but we have also some dedicated settings such as
    Polar projection
    :label:`figure-projection-polar-config`
    (sources: :source:`scales-projections/projection-polar-config.py`).
-   
+
 
 If you now try to do some plots (e.g. plot, scatter, bar), you'll see that
 everything is transformed but a few elements. More precisely, the shape of
@@ -204,7 +204,7 @@ resulting in a slightly curved ellipse. For the text, the process is the same
 but it is a bit more complicated since we need first to convert the text into a
 path that can be transformed (we'll see that in more detail in the next
 chapter).
-          
+
 
 The second projection that matplotlib offers is the 3d projection, that is the
 projection from a 3D Cartesian space to a 2 Cartesian space. To start using 3D
@@ -232,14 +232,14 @@ documented on the matplotlib website and I won't explain each and every command.
     `depth-buffer <https://en.wikipedia.org/wiki/Z-buffering>`_. This is not a
     bug (nor a feature) and this results in some glitches between the elements
     composing a figure.
-   
+
 .. figure:: scales-projections/projection-3d-frame.pdf
    :width: 80%
 
    Three dimensional projection
    :label:`figure-projection-3d-frame`
    (sources: :source:`scales-projections/projection-3d-frame.py`).
-          
+
 For other type of projections, you'll need to install third-party packages
 depending on the type of projection you intend to use:
 
@@ -256,7 +256,7 @@ depending on the type of projection you intend to use:
   pandas to allow spatial operations on geometric types. Geometric operations
   are performed by Shapely. Geopandas further depends on fiona for file access
   and descartes and matplotlib for plotting.
-  
+
 `Python-ternary <https://github.com/marcharper/python-ternary>`_
   is a plotting library for use with matplotlib to make ternary plots plots in
   the two dimensional simplex projected onto a two dimensional plane. The
@@ -268,7 +268,7 @@ depending on the type of projection you intend to use:
   is a matplotlib extension providing a projection class for creating high
   quality Smith Charts with Python. The generated plots blend seamlessly into
   matplotlib's style and support almost the full range of customization options.
-  
+
 `Matplotlib-3D <https://github.com/rougier/matplotlib-3d>`_
   is an experimental project that attempts to provide a better and more
   versatile 3d axis for Matplotlib.
@@ -284,14 +284,14 @@ If you're still not satisfied with existing projections, your last option is to
 create your own projection but this is quite an advanced operation even though
 the matplotlib documentation provides some `examples
 <https://matplotlib.org/devel/add_new_projection.html>`_
-             
+
 
 Exercises
 ---------
 
 **Exercise 1** Considering functions :math:`f(x) = 10^x`, :math:`f(x) = x` and
 :math:`f(x) = log_{10}(x)`, try to reproduce figure :ref:`figure-scales-log-log`.
- 
+
 .. figure:: scales-projections/scales-log-log.pdf
    :width: 100%
 
@@ -320,7 +320,7 @@ works.
 .. --- Links ------------------------------------------------------------------
 .. _linear: https://matplotlib.org/api/scale_api.html?#matplotlib.scale.LinearScale
 .. _log: https://matplotlib.org/api/scale_api.html?#matplotlib.scale.LogScale
-.. _symlog: https://matplotlib.org/api/scale_api.html?#matplotlib.scale.SymmetricalLogScale 
+.. _symlog: https://matplotlib.org/api/scale_api.html?#matplotlib.scale.SymmetricalLogScale
 .. _logit: https://matplotlib.org/api/scale_api.html?#matplotlib.scale.LogitScale
 .. _polar: https://matplotlib.org/api/projections_api.html#module-matplotlib.projections.polar
 .. _3d: https://matplotlib.org/mpl_toolkits/mplot3d/tutorial.html
