@@ -225,7 +225,8 @@ vector format and vice-versa.
 
 If you want to have some interaction with your figure, you have to combine one
 of the available interfaces (see table :ref:`table-interfaces`) with a
-renderer. For example `GTK3Cairo` or `WebAgg`.
+renderer (e.g. `GTK3Cairo` that stands for GTK3 interface with Cairo
+renderer).
 
 
 
