@@ -193,7 +193,7 @@ ax.plot(X, Y, color="C1", zorder=-10)
 ax.set_xticks([]), ax.set_yticks([])
 
 
-# Usage of explicite colors
+# Usage of explicit colors
 ax = plt.subplot(1, 2, 2)
 
 Y, SD = Y1.mean(axis=0), Y1.std(axis=0)

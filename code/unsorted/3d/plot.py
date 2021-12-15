@@ -444,7 +444,7 @@ def bar(
     V = T[:, :2].reshape(8, shape[0], shape[1], 2)
     Z = -T[:, 2].reshape(8 * shape[0] * shape[1])
 
-    # Normalization of the z value such that we can maipulate zbar / zface
+    # Normalization of the z value such that we can manipulate zbar / zface
     # Drawback is that it cannot be sorted anymore with other 3d objects
     Z = glm.rescale(Z, 0, 1)
 
