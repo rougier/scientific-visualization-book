@@ -47,7 +47,7 @@ journals possess a template which dictate the future layout of your article (if
 accepted) as well as a font stack, that is, a choice of fonts for main body,
 bibliography and peripheral information. If you want your figure to have a good
 appearance, you'll need to chose your fonts accordingly. To do that, you can
-have a look at font installed on your system or browse online galleries such as
+have a look at fonts installed on your system or browse online galleries such as
 `Font squirrel <https://www.fontsquirrel.com/>`_, `dafont.com
 <https://www.dafont.com/fr/>`_ or `Google font <https://fonts.google.com/>`_.
 
@@ -239,8 +239,8 @@ figure :ref:`figure-typography-text-path`.
 
 In this example, I replaced the regular contour labels with text path objects
 that follow the path. It requires some computations but not that much
-actually. The results is aesthetically better to me but it must be used
-wisely. If your contour lines are too small or possesses sharp turns, it will
+actually. The result is aesthetically better to me but it must be used
+wisely. If your contour lines are too small or possess sharp turns, it will
 make the text unreadable.
 
 .. figure:: typography/projection-3D-gaussian.pdf
