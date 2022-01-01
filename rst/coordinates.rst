@@ -42,7 +42,7 @@ coordinate from one system to the other, matplotlib provides a set of
 
    The co-existing coordinate systems within a figure using Cartesian
    projection. **FC**: Figure Coordinates, **NFC** Normalized Figure Coordinates,
-   **DC**: Data Coordinatess, **NDC**: Normalized Data Coordinates.
+   **DC**: Data Coordinates, **NDC**: Normalized Data Coordinates.
    :label:`fig-coordinates-cartesian`
 
 
@@ -51,11 +51,11 @@ coordinate from one system to the other, matplotlib provides a set of
            
    The co-existing coordinate systems within a figure using Polar projection.
    **FC**: Figure Coordinates, **NFC** Normalized Figure Coordinates, **DC**:
-   Data Coordinatess, **NDC**: Normalized Data Coordinates.
+   Data Coordinates, **NDC**: Normalized Data Coordinates.
    :label:`fig-coordinates-polar`
 
 
-Let's test theses functions on some specific points (corners):
+Let's test these functions on some specific points (corners):
 
 .. code:: python
 
@@ -90,7 +90,7 @@ normalized and native data coordinates. With other kind of projection, things
 work just the same even though it might appear less obvious. For example, let
 us consider a polar projection where we want to draw the outer axes border. In
 normalized data coordinates, we know the coordinates of the four corners,
-namely `(0,0)`, `(1,0)`, `(1,1)` and `(0,1)`. We can then transforms these
+namely `(0,0)`, `(1,0)`, `(1,1)` and `(0,1)`. We can then transform these
 normalized data coordinates back to native data coordinates and draw the
 border. There is however a supplementary difficulty because those coordinates
 are beyond the axes limit and we'll need to tell matplotlib to not care about
@@ -124,7 +124,7 @@ The result is shown on figure :ref:`fig-transforms-polar`.
 However, most of the time, you won't need to use these transform functions
 explicitly but rather implicitly. For example, consider the case where you
 want to add some text over a specific plot. For this, you need to use the text_
-function and to specify what is to be written (of course) and the coordinates
+function and specify what is to be written (of course) and the coordinates
 where you want to display the text. The question (for matplotlib) is how to
 consider these coordinates? Are they expressed in data coordinates? normalized
 data coordinates? normalized figure coordinates? The default is to consider
@@ -233,7 +233,7 @@ function 200 times with random values.
 
    
 Transformations are quite powerful tools even though you won't manipulate them
-too often in your daily life. But there are some few cases where you'll be
+too often in your daily life. But there are a few cases where you'll be
 happy to know about them. You can read further on transforms and coordinates
 with the `Transformation tutorial`_ on the matplotlib website.
 
@@ -251,7 +251,7 @@ obvious. The main difficulty is to have the histogram at the right position,
 size and orientation knowing that position must be set in data coordinates,
 size must be given in figure normalized coordinates and orientation in
 degrees. To complicate things, we want to express the elevation of the text
-above the histogram bars in term of data points. |newline|
+above the histogram bars in data points. |newline|
 
 .. figure:: coordinates/transforms-hist.pdf
    :width: 100%
@@ -299,7 +299,7 @@ coordinates because the floating axis requires normalized figure coordinates.
    DC_to_NFC = lambda x: FC_to_NFC(DC_to_FC(x))
 
 We have one supplementary difficulty because the position of a floating axis
-needs to be defined in term of non-rotated bounding box:
+needs to be defined in terms of the non-rotated bounding box:
 
 .. code:: Python
 
