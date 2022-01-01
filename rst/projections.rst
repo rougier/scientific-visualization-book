@@ -221,7 +221,7 @@ With this 3D axis, you can use regular plotting commands with a big difference
 though: you need now to provide 3 coordinates (x,y,z) where you previously
 provided only two (x,y) as illustrated on figure
 :ref:`figure-projection-3d-frame`. Note that this figure is quite different from
-the default 3D axis you may get from matplotlib. Here, I tweaked every settings
+the default 3D axis you may get from matplotlib. Here, I tweaked every setting
 I can think of to try to improve the default look and to show how things can be
 changed. Have a look at the corresponding code and try to modify some settings to
 see the actual effect. The `3D Axis API
@@ -304,8 +304,8 @@ polar patterns
 <https://en.wikipedia.org/wiki/Microphone#Polar_patterns>`__
 (omnidirectional, subcardioid, cardioid, supercardioid, bidirectional
 and shotgun). The first five patterns are simple functions where
-radius evolvse with angle while the last pattern may require some
-works.
+radius evolves with angle, while the last pattern may require some
+work.
 
 .. figure:: scales-projections/polar-patterns.pdf
    :width: 100%
