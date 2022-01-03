@@ -3,11 +3,16 @@
 # Author:  Nicolas P. Rougier
 # License: BSD
 # ----------------------------------------------------------------------------
+# Comment: Nicolas P. Rougier & Jehyun Lee
+# kr & en: https://jehyunlee.github.io/2021/12/28/Python-DS-94-rougier02/
+# ----------------------------------------------------------------------------
 # Illustrate the use of TextPath and access to raw vertices
 # ----------------------------------------------------------------------------
 import matplotlib.pyplot as plt
 from matplotlib.textpath import TextPath
 from matplotlib.patches import PathPatch
+from matplotlib.path import Path
+import numpy as np
 
 fig = plt.figure(figsize=(4.25, 2))
 ax = fig.add_axes([0, 0, 1, 1], aspect=1, xlim=[-40, 40], ylim=[-1, 25])
@@ -31,26 +36,31 @@ yfactor = 1 / 120
 for i, line in enumerate(text[::-1]):
     path = TextPath((0, 0), line, size=size)
     V = path.vertices
+    codes = path.codes
     xmin, xmax = V[:, 0].min(), V[:, 0].max()
     ymin, ymax = V[:, 1].min(), V[:, 1].max()
 
+    # New Path
     # X centering
-    V[:, 0] -= (xmax + xmin) / 2
+    Px = V[:, 0] - (xmax + xmin) / 2
 
     # Moving whole text at y coordinates
-    V[:, 1] += y
+    Py = V[:, 1] + y
 
     # Rescaling along y
-    V[:, 1] *= 1 - (V[:, 1] * yfactor)
+    Py *= 1 - (Py * yfactor)
 
     # Rescaling along x
-    V[:, 0] *= 1 - (V[:, 1] * xfactor)
+    Px *= 1 - (Py * xfactor)
 
     # Update interlines
     y += size * (1 - ymin * yfactor)
 
+    # new path
+    path_new = Path(np.array([Px, Py]).T, codes=codes)
+    
     # Display
-    patch = PathPatch(path, facecolor="%.2f" % (i / 10), linewidth=0, clip_on=False)
+    patch = PathPatch(path_new, facecolor="%.2f" % (i / 10), linewidth=0, clip_on=False)
     ax.add_artist(patch)
 
 plt.savefig("../../figures/typography/text-starwars.pdf")

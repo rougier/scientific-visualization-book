@@ -93,7 +93,7 @@ different packages:
 License
 -------
 
-This volume is is licensed under a Creative Commons Attribution Non Commercial
+This volume is licensed under a Creative Commons Attribution Non Commercial
 Share Alike 4.0 International License, which permits use, sharing, adaptation,
 distribution and reproduction in any medium or format, as long as you give
 appropriate credit to the original author(s) and the source, provide a link to

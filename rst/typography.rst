@@ -46,7 +46,7 @@ in an article that will be published in a scientific journal. These kind of
 journals possess a template which dictate the future layout of your article (if
 accepted) as well as a font stack, that is, a choice of fonts for main body,
 bibliography and peripheral information. If you want your figure to have a good
-appearance, you'll need to chose your fonts accordingly. To do that, you can
+appearance, you'll need to choose your fonts accordingly. To do that, you can
 have a look at fonts installed on your system or browse online galleries such as
 `Font squirrel <https://www.fontsquirrel.com/>`_, `dafont.com
 <https://www.dafont.com/fr/>`_ or `Google font <https://fonts.google.com/>`_.
@@ -85,7 +85,7 @@ back to other typefaces if the defaults are not installed. To check which font i
        font = findfont(FontProperties(family=family))
        print(family, ":" , os.path.basename(font))
 
-You can also design your own own font stack by choosing a set of alternative
+You can also design your own font stack by choosing a set of alternative
 font families. Figure :ref:`figure-typography-font-stacks` shows some
 alternative font stacks based on the Roboto and Source Pro Family which both
 have serif, sans and monospace typefaces and comes with several weights.
@@ -254,9 +254,9 @@ Another interesting usage of text path is the case of 3D projection as
 illustrated on figure :ref:`figure-projection-3d-gaussian`. On this figure, I
 took advantage of the `3D text API
 <https://matplotlib.org/gallery/mplot3d/text3d.html>`_ to orient and project
-tick labels and axes titles. Note that such projection is fine a long as the
+tick labels and axes titles. Note that such projection is fine as long as the
 figure is properly oriented. If you rotate, text might be difficult to read and
-this the reason why the default for 3d projection is to have text that always
+this is the reason why the default for 3d projection is to have text that always
 face the camera, ensuring legibility.
 
           

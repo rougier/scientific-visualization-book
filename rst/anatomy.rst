@@ -27,7 +27,7 @@ that contains most of the figure elements and of course your actual plot, a
 line in this case. The possibility to not specify everything might be
 convenient but in the meantime, it limits your choices because missing elements
 are created automatically, using default values. For example, in the previous
-example, you have no control of the initial figure size since is has been
+example, you have no control of the initial figure size since it has been
 chosen implicitly during creation. If you want to change the figure size or
 the axes aspect, you need to be more explicit:
 
@@ -62,7 +62,7 @@ You may have noticed in the previous example that the plot_ command is attached
 to `ax` instead of `plt`. The use of `plt.plot` is actually a way to tell
 matplotlib that we want to plot on the current axes, that is, the last axes
 that has been created, implicitly or explicitly. No need to remind that
-*explicit is better than implicit* as explained in the The Zen of Python, by
+*explicit is better than implicit* as explained in The Zen of Python, by
 Tim Peters (`import this`). When you have choice, it is thus preferable to
 specify exactly what you want to do. Consequently, it is important to know what
 are the different elements of a figure.

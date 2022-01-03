@@ -258,7 +258,7 @@ depending on the type of projection you intend to use:
   and descartes and matplotlib for plotting.
   
 `Python-ternary <https://github.com/marcharper/python-ternary>`_
-  is a plotting library for use with matplotlib to make ternary plots plots in
+  is a plotting library for use with matplotlib to make ternary plots in
   the two dimensional simplex projected onto a two dimensional plane. The
   library provides functions for plotting projected lines, curves
   (trajectories), scatter plots, and heatmaps. There are several examples and a
