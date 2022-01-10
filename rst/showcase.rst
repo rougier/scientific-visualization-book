@@ -74,7 +74,7 @@ difficulty, only some geometrical computations.
 **Self-organizing map** (SOM) "is a type of artificial neural network
 that is trained using unsupervised learning to produce a
 low-dimensional (typically two-dimensional), discretized
-representation of the input spa-ce of the training samples, called a
+representation of the input space of the training samples, called a
 map, and is therefore a method to do dimensionality reduction"
 `[Wikipedia] <https://en.wikipedia.org/wiki/Self-organizing_map>`_. I
 developed with Georgios Detorakis a `randomized self-organizing map
