@@ -44,6 +44,7 @@ ax.pie(np.ones(12), radius=1, colors=colors, wedgeprops=dict(width=size, edgecol
 # Rotated and transformed label
 def label(text, angle, radius=1, scale=0.005):
     path = TextPath((0, 0), text, size=10)
+    path.vertices.flags.writeable = True
     V = path.vertices
     xmin, xmax = V[:, 0].min(), V[:, 0].max()
     ymin, ymax = V[:, 1].min(), V[:, 1].max()
