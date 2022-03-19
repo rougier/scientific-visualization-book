@@ -106,7 +106,7 @@ class PathTracer:
 
 # The maze-path as been drawn by hand using the path tracer above
 # Here we count the number of path points contained in each part
-# of the same such as to set the color usng a colormap
+# of the same such as to set the color using a colormap
 P = np.load("radial-maze-path.npy")
 N = np.zeros(len(C))
 for i, vertices in enumerate(C):

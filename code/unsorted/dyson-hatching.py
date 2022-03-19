@@ -26,7 +26,7 @@ from matplotlib.collections import PolyCollection
 from math import cos, sin, floor, sqrt, pi, ceil
 
 
-# This is important because "cities" have been manually positionned
+# This is important because "cities" have been manually positioned
 np.random.seed(1)
 
 

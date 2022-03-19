@@ -213,7 +213,7 @@ on screen but only saved on disk.
 
 The canonical renderer is Agg which uses the `Anti-Grain Geometry C++ library
 <https://antigrain.com>`__ to make a raster image of the figure (see figure
-:ref:`fig-raster-vector` to see the different between raster and vector). Note
+:ref:`fig-raster-vector` to see the difference between raster and vector). Note
 that even if you choose a raster renderer, you can still save the figure in a
 vector format and vice-versa.
 
@@ -224,8 +224,9 @@ vector format and vice-versa.
    :source:`anatomy/raster-vector.py`). :label:`fig-raster-vector`
 
 If you want to have some interaction with your figure, you have to combine one
-of the available interface (see table :ref:`table-interfaces`) with a
-renderer. For example `GTK3Cairo` or `WebAgg`.
+of the available interfaces (see table :ref:`table-interfaces`) with a
+renderer (e.g. `GTK3Cairo` that stands for GTK3 interface with Cairo
+renderer).
 
 
 
@@ -251,8 +252,8 @@ in interactive mode (figure is updated after each matplotlib command):
    plt.xlabel("X Axis") # Label is updated
    plt.ioff()           # Interactive mode off
    
-If you want to know more on backends, you can have a look at the `introductory
-tutorial <https://matplotlib.org/tutorials/introductory/usage.html#backends>`__
+If you want to know more on backends, you can have a look at the `matplotlib
+user guide <https://matplotlib.org/stable/users/explain/backends.html>`__
 on the matplotlib website.
 
 

@@ -10,7 +10,7 @@ Coordinate systems
 
 In any matplotlib figure, there is at least two different coordinate systems
 that co-exist anytime. One is related to the figure (FC) while the others are
-related each of the individual plots (DC). Each of these coordinate systems
+related to each of the individual plots (DC). Each of these coordinate systems
 exists in normalized (NxC) or native version (xC) as illustrated in figures
 :ref:`fig-coordinates-cartesian` and :ref:`fig-coordinates-polar`. To convert a
 coordinate from one system to the other, matplotlib provides a set of
