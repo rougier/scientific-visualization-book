@@ -81,7 +81,7 @@ If your data has negative values, you have to use a symmetric log scale (symlog_
 that is a composition of both a linear and a logarithmic scale. More precisely,
 values around 0 use a linear scale and values outside the vicinity of zero uses
 a logarithmic scale. You can of course specify the extent of the linear zone
-when you set the scale. The logit_ scale is used for values in the range [0,1]
+when you set the scale. The logit_ scale is used for values in the range ]0,1[
 and uses a logarithmic scale on the "border" and a quasi-linear scale in the
 middle (around 0.5). If none of these scales suit your needs, you still have
 the option to define your own custom scale:
