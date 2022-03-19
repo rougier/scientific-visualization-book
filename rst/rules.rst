@@ -273,7 +273,7 @@ of your figures.
    we used the disc area to represent the value, while in the bottom part we
    used the disc radius. Results are visually very different. In the latter
    case (red circles), the last value (10) appears very small compared to the
-   first one (30), while the ratio between the two values is only 3∶1. This
+   first one (30), while the ratio between the two values is only 3:1. This
    situation is actually very frequent in the literature because the command
    (or interface) used to produce circles or scatter plots (with varying point
    sizes) offers to use the radius as default to specify the disc size. It thus

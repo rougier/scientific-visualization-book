@@ -156,7 +156,7 @@ Another popular usage of color is to show some plots associated with their stand
    Showing standard deviation, with or without transparency
    :label:`figure-alpha-vs-color` (sources: :source:`colors/alpha-vs-color.py`).
 
-As you can see on the left part of figure :ref:`figure-alpha-vs-color`, using transparency results in the two plots to be somehow mixed together. This might be a useful effect since it allows you to show what is happening in shared  areas. This is not the case when using opaque colors and you thus have to decide which plot is covering the other (using `zorder`). Note that the choice of one or the other solution is up to you since it very much depends on your date.
+As you can see on the left part of figure :ref:`figure-alpha-vs-color`, using transparency results in the two plots to be somehow mixed together. This might be a useful effect since it allows you to show what is happening in shared  areas. This is not the case when using opaque colors and you thus have to decide which plot is covering the other (using `zorder`). Note that the choice of one or the other solution is up to you since it very much depends on your data.
 
 However, it is important to note that the use of transparency is quite specific in the sense that the visual result is not specified explicitly in the script. It depends actually from the actual rendering of the figure and the way matplotlib composes the different elements. Let's consider for example a scatter plot (normal distribution) where each point is transparent (10%):
 

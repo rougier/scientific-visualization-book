@@ -93,7 +93,7 @@ n parallel lines with some noise:
        return P @ Z.T
 
 You can see the result in the center of figure
-:ref:`figure-dyson-hatching`. This starts to looks like Dyson hatching
+:ref:`figure-dyson-hatching`. This starts to look like Dyson hatching
 but it is not yet satisfactory because hatches cover each others. To
 avoid that, we need to clip hatches using the corresponding voronoi
 cells. The easiest way to do that is to use the `shapely library
@@ -146,7 +146,7 @@ The result looks nice but it can be further improved. For example, we
 could introduce some noise in walls to suggest manual drawing, we
 could improve rocks by adding noise, etc. Matplotlib provides
 everything that is needed and the only limit is your imagination. If
-you're curious on chat could be achieved, make sure to have a look at
+you're curious on what could be achieved, make sure to have a look at
 `one page dungeon <https://watabou.itch.io/one-page-dungeon>`__ by
 Oleg Dolya or the `Fantasy map generator
 <https://mewo2.com/notes/terrain/>`__ by Martin O'Leary.
@@ -240,7 +240,7 @@ Real example
 
 When put together, these graphical primitives allow to draw quite
 elaborated figures as shown on figure
-:ref:`figure-basal-ganglia`. This figure comes the article `A
+:ref:`figure-basal-ganglia`. This figure comes from the article `A
 graphical, scalable and intuitive method for the placement and the
 connection of biological cells
 <https://arxiv.org/pdf/1710.05189.pdf>`_ that introduces a graphical
@@ -256,13 +256,13 @@ globus pallidus) that has been split in four different subfigures:
   extract the paths delimiting each structure and plot them on the
   figure.
 
-* **Subfigure B** is represents the actual method for positioning an
+* **Subfigure B** represents the actual method for positioning an
   arbitrary number of neurons enforcing the density represented by the
   color gradient. To represent them, I used a simple scatter plot and
   colored some neurons according to their input/output status.
 
 * **Subfigure C** represents an interpolation of the activity of the
-  neurons and has been made using a 2D histogram made. To do that, I
+  neurons and has been made using a 2D histogram mode. To do that, I
   simply built a big array representing the whole image and I set the
   activity around the neuron using a disc of constant radius. This is
   only a matter of translating the 2d coordinates of the neuron to a
