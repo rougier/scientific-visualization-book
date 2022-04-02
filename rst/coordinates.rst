@@ -130,7 +130,7 @@ consider these coordinates? Are they expressed in data coordinates? normalized
 data coordinates? normalized figure coordinates? The default is to consider
 they are expressed in data coordinates. Consequently, if you want to us a
 different system, you'll need to explicitly specify a `transform` when calling
-the function. Let's say for example we want to add a letter on the bottom right
+the function. Let's say for example we want to add a letter on the bottom left
 corner. We can write:
 
 .. code:: Python
@@ -153,7 +153,7 @@ the offset:
 
 .. code:: Python
 
-   from matplotlib.transforms import ScaleTranslation
+   from matplotlib.transforms import ScaledTranslation
 
    fig = plt.figure(figsize=(6, 4))
 
