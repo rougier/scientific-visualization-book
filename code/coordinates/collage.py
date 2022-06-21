@@ -10,7 +10,7 @@ import matplotlib.transforms as transforms
 
 
 def imshow(ax, I, position=(0, 0), scale=1, angle=0, zorder=10):
-    height, width = I.shape
+    height, width = I.shape[0], I.shape[1]
     extent = scale * np.array([-width / 2, width / 2, -height / 2, height / 2])
     im = ax.imshow(I, extent=extent, zorder=zorder, cmap="cividis")
     transform = transforms.Affine2D().rotate_deg(angle).translate(*position)
