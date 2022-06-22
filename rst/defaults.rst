@@ -214,7 +214,7 @@ If stylesheet allows to set a fair number of parameters, there is still plenty o
 .. code:: python
 
    ax.set_yticks([-1,1])
-   ax.set_xticklabels(["-1", "+1"]) 
+   ax.set_yticklabels(["-1", "+1"]) 
 
    ax.set_xticks([-np.pi, -np.pi/2, np.pi/2, np.pi])
    ax.set_xticklabels(["-π", "-π/2", "+π/2", "+π"]) 

@@ -185,7 +185,7 @@ example the following script:
 
 .. code:: python
 
-   plt.scatter(np.random.rand(n=int(1e6), np.random.rand(n=int(1e6))
+   plt.scatter(np.random.rand(int(1e6)), np.random.rand(int(1e6)))
    plt.savefig("vector.pdf")
 
 The resulting file size is approximately 15 megabytes. The reason for
@@ -201,7 +201,7 @@ Let me now slightly modify the code:
 
 .. code:: python
 
-   plt.scatter(np.random.rand(n=int(1e6), np.random.rand(n=int(1e6),
+   plt.scatter(np.random.rand(int(1e6)), np.random.rand(int(1e6)),
                rasterized=True)
    plt.savefig("vector.pdf", dpi=600)
 
