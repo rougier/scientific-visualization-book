@@ -70,7 +70,7 @@ When you create a new figure, this figure comes with a specific size, either imp
   .. code:: python
 
      fig = plt.figure(figsize=(6,6))
-     ax = plt.subplot(1,1,1, aspect='auto')
+     ax = plt.subplot(1,1,1, aspect=0.5)
      ax.set_xlim(0,1), ax.set_ylim(0,1) 
      
 **G**: figure aspect is 1/2, axes aspect is 1, x and y range are different
@@ -86,7 +86,7 @@ When you create a new figure, this figure comes with a specific size, either imp
   .. code:: python
 
      fig = plt.figure(figsize=(6,6))
-     ax = plt.subplot(1,1,1, aspect='auto')
+     ax = plt.subplot(1,1,1, aspect=1)
      ax.set_xlim(0,1), ax.set_ylim(0,2) 
      
 **I**: figure aspect is 1, axes aspect is 2, x and y range are equal
@@ -94,7 +94,7 @@ When you create a new figure, this figure comes with a specific size, either imp
   .. code:: python
 
      fig = plt.figure(figsize=(6,6))
-     ax = plt.subplot(1,1,1, aspect='auto')
+     ax = plt.subplot(1,1,1, aspect=2)
      ax.set_xlim(0,1), ax.set_ylim(0,1) 
 
 
