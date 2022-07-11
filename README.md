@@ -32,6 +32,11 @@ future work on Python (and
 
 If you don't want to spend money, you can simply [nominate me](https://stars.github.com/nominate/) for the GitHub stars program if you find my work useful for the community.
 
+### Build the book
+
+**Ubuntu**  
+- [Article](https://labdmitriy.github.io/blog/building-scientific-visualization-book/)  
+- [Script](scripts/build_book/ubuntu.sh)
 
 ### See also
 
