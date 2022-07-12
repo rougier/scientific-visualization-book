@@ -21,7 +21,7 @@ class Ruler:
     def show(self):
 
         if self.ax is None:
-            ax = fig.add_axes([0, 0, 1, 1], zorder=-10, facecolor="None")
+            ax = self.fig.add_axes([0, 0, 1, 1], zorder=-10, facecolor="None")
             ax.spines["right"].set_visible(False)
             ax.spines["bottom"].set_visible(False)
 
