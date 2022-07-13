@@ -189,8 +189,7 @@ on figure :ref:`fig-transforms-blend`?
 .. figure:: coordinates/transforms-blend.pdf
    :width: 100%
            
-   Axes boundaries in polar projection using a transform from normalized data
-   coordinates to data coordinates (:source:`coordinates/transform-blend.py`).
+   Precise placement (arrows below X axis tick labels) using blended transform (:source:`coordinates/transforms-blend.py`).
    :label:`fig-transforms-blend`
 
 The natural unit for text is point and we thus want to position our arrow using
