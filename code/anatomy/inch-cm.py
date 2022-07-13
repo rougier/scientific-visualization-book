@@ -11,7 +11,7 @@
 # Figure width (inch) (10.8/2.54) ~ 4.25 inches
 #
 # However, we need to have margins in our figure (or tick labels will be cut)
-# so we'll have 0.25 inches margin on each side of the axis such that the axis
+# so we'll have 0.125 inches margin on each side of the axis such that the axis
 # will be 4 inches.
 # ----------------------------------------------------------------------------
 import matplotlib as mpl
@@ -31,10 +31,10 @@ margin = 0.125  #  0.125 inches
 
 fig = plt.figure(figsize=(fig_width, fig_height))
 plt.subplots_adjust(
-    left=0.5 * margin / fig_width,
-    right=1 - 0.5 * margin / fig_width,
-    bottom=0.5 * margin / fig_height,
-    top=1 - 0.5 * margin / fig_height,
+    left=margin / fig_width,
+    right=1 - margin / fig_width,
+    bottom=margin / fig_height,
+    top=1 - margin / fig_height,
 )
 
 ax1 = plt.subplot(1, 1, 1)
