@@ -106,8 +106,8 @@ the limit using the `clip_on` arguments.
    NDC_to_DC = lambda x: FC_to_DC(NDC_to_FC(x))
    P = NDC_to_DC([[0,0], [1,0], [1,1], [0,1], [0,0]])
    
-   plt.plot(P[:,0], P[:,1], clip_on=False, zorder=-10
-            color="k", linewidth=1.0, linestyle="--", )
+   plt.plot(P[:,0], P[:,1], clip_on=False, zorder=-10,
+            color="k", linewidth=1.0, linestyle="--")
    plt.scatter(P[:-1,0], P[:-1,1],
               clip_on=False, facecolor="w", edgecolor="k")
    plt.show()
