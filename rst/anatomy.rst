@@ -212,7 +212,7 @@ on screen but only saved on disk.
    ========== =============== ===============================================
 
 The canonical renderer is Agg which uses the `Anti-Grain Geometry C++ library
-<https://antigrain.com>`__ to make a raster image of the figure (see figure
+<http://agg.sourceforge.net/antigrain.com/>`__ to make a raster image of the figure (see figure
 :ref:`fig-raster-vector` to see the difference between raster and vector). Note
 that even if you choose a raster renderer, you can still save the figure in a
 vector format and vice-versa.
