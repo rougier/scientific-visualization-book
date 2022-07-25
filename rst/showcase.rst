@@ -10,7 +10,7 @@ Showtime.
 :raw-latex:`\fullpagefigure{showcases/contour-dropshadow.png}`
 :raw-latex:`\phantomsection \addcontentsline{toc}{chapter}{Filled contours with dropshadows}`
            
-**Filled contours with dropshadows** is a nice effet that allows you
+**Filled contours with dropshadows** is a nice effect that allows you
 to use a sequential colormap (here Viridis) while distinguishing
 positive and negative values. If you look closely at the figure, you
 can see that the drop shadow is external for positive values and
