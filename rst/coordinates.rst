@@ -100,6 +100,7 @@ the limit using the `clip_on` arguments.
           
    fig = plt.figure(figsize=(5, 5), dpi=100)
    ax = fig.add_subplot(1, 1, 1, projection='polar')
+   ax.set_ylim(-1, 1), ax.set_yticks([-1, -0.5, 0, 0.5, 1])
 
    FC_to_DC = ax.transData.inverted().transform
    NDC_to_FC = ax.transAxes.transform
