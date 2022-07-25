@@ -211,7 +211,7 @@ on figure :ref:`figure-collage`. To obtain such figure, I rewrote the
 `imshow
 <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.imshow.html>`__
 function to apply translation, scaling and rotation and I call the
-function 200 times with random values.
+function 200 times with random values (check :source:`coordinates/collage.py` for full code, I'm only giving main details below).
 
 .. code:: python
           
