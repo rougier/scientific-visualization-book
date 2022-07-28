@@ -370,7 +370,7 @@ synchronizing this animation with some music for example.
           
 Note that in the update function, I took care of updating the limits
 of the colormap. This is necessary because the displayed image is
-dynamic and the minimum and maximum values may vary from one frame ot
+dynamic and the minimum and maximum values may vary from one frame to
 the other. If you don't do that, you might have some flickering.
 
 You can also have much more elaborated scenario such as in the
