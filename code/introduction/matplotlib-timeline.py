@@ -47,7 +47,7 @@ plt.scatter(
 
 annotate(ax, 2021, 4, "3.4")
 annotate(ax, 2020, 3, "3.3")
-annotate(ax, 2019, 4, "3.2")
+annotate(ax, 2019, 4, "3.2", y0=2.5)
 annotate(ax, 2019, 2, "3.1")
 annotate(ax, 2018, 3, "3.0", y0=1.5)
 annotate(ax, 2018, 1, "2.2", fc="#777777")
@@ -63,16 +63,31 @@ annotate(ax, 2009, 1, "0.99")
 annotate(ax, 2003, 1, "0.10")
 
 x0, x1 = 2002.5, 2011.9
-ax.plot([x0, x1], [5, 5], color="black", linewidth=1, marker="|", clip_on=False)
-ax.text((x0 + x1) / 2, 5.1, "J.D. Hunter", ha="center", va="bottom", size="x-small")
+ax.plot(
+    [x0, x1], [5, 5], color="black", linewidth=1, marker="|", clip_on=False
+)
+ax.text(
+    (x0 + x1) / 2, 5.1, "J.D. Hunter", ha="center", va="bottom", size="x-small"
+)
 
 x0, x1 = 2012.1, 2017.9
-ax.plot([x0, x1], [5, 5], color="black", linewidth=1, marker="|", clip_on=False)
-ax.text((x0 + x1) / 2, 5.1, "M. Droettboom", ha="center", va="bottom", size="x-small")
+ax.plot(
+    [x0, x1], [5, 5], color="black", linewidth=1, marker="|", clip_on=False
+)
+ax.text(
+    (x0 + x1) / 2,
+    5.1,
+    "M. Droettboom",
+    ha="center",
+    va="bottom",
+    size="x-small",
+)
 
 x0, x1 = 2014.1, 2021.5
 ax.plot([x0, x1 + 1], [6, 6], color="black", linewidth=1, marker="|")
-ax.text((x0 + x1) / 2, 6.1, "T. Caswell", ha="center", va="bottom", size="x-small")
+ax.text(
+    (x0 + x1) / 2, 6.1, "T. Caswell", ha="center", va="bottom", size="x-small"
+)
 
 ax.spines["right"].set_visible(False)
 ax.spines["left"].set_visible(False)
