@@ -213,7 +213,7 @@ outside the axes, specifying this does not need to be clipped.
    :label:`figure-complex-layout-bare`
 
           
-Exercices
+Exercises
 ---------
 
 **Standard layout 1** Using gridspec, the goal is to reproduce figure 
