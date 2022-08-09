@@ -106,7 +106,7 @@ When you create a new figure, this figure comes with a specific size, either imp
 
 
 The final layout of a figure results from a set of constraints that makes it  difficult to predict the end result. This is actually even more acute when you combine several axes on the same figure as shown on figures 
-:ref:`figure-layout-aspect-1`, :ref:`figure-layout-aspect-2` & :ref:`figure-layout-aspect-3`. Depending on what is important in your figure (aspect, range or size), you'll privilege one of these layout. In any case, you should now have realized that if you over-constrained your layout, it might be unsolvable and matplotlib will try to find the best compromise.
+:ref:`figure-layout-aspect-1`, :ref:`figure-layout-aspect-2` & :ref:`figure-layout-aspect-3`. Depending on what is important in your figure (aspect, range or size), you'll privilege one of these layouts. In any case, you should now have realized that if you over-constrained your layout, it might be unsolvable and matplotlib will try to find the best compromise.
 
 .. figure:: layout/layout-aspect-1.pdf
    :width: 100%
