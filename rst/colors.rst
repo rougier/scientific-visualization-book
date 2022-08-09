@@ -148,7 +148,7 @@ figures.
    Identification of groups with internal variations using color stacks.
    :label:`figure-colored-hist` (sources: :source:`colors/colored-hist.py`).
 
-Another popular usage of color is to show some plots associated with their standard deviation (SD) or standard error (SE). To do that, there are two different ways to do it. Either with use palettes as the o,e defined previously or we use transparency using the `alpha` keyword. Let's compare the results.
+Another popular usage of color is to show some plots associated with their standard deviation (SD) or standard error (SE). To do that, there are two different ways to do it. Either with use palettes as the one defined previously or we use transparency using the `alpha` keyword. Let's compare the results.
 
 .. figure:: colors/alpha-vs-color.pdf
    :width: 100%
