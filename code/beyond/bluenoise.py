@@ -115,7 +115,7 @@ if __name__ == "__main__":
     ax = plt.subplot(1, 3, 3, aspect=1, xlim=[0, 5], xticks=[], ylim=[0, 5], yticks=[])
     V = generate([5, 5], 0.099)
     ax.scatter(V[:, 0], V[:, 1], s=5, edgecolor="None", facecolor="black")
-    ax.set_title("Blue noise ditribution (n=%d)" % len(V))
+    ax.set_title("Blue noise distribution (n=%d)" % len(V))
 
     plt.tight_layout()
     plt.savefig("../../figures/beyond/bluenoise.pdf")
