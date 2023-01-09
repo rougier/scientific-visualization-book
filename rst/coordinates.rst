@@ -162,7 +162,7 @@ the offset:
    plt.text(0.1, 0.1, "A", transform=ax.transAxes)
 
    ax = fig.add_subplot(2, 1, 2)
-   dx, dy = 10/fig.dpi, 10/fig.dpi
+   dx, dy = 10/72, 10/72
    offset = ScaledTranslation(dx, dy, fig.dpi_scale_trans)
    plt.text(0, 0, "B", transform=ax.transAxes + offset)
 
