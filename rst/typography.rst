@@ -19,7 +19,7 @@ rendering pipeline as it will be explained below, it is nonetheless important
 to have a basic understanding of typography. Unfortunately, I cannot write here
 a full course on typography and I advise the interested reader to read
 `Practical Typography <https://practicaltypography.com/>`_ by Matthew
-Butterick. This open access book introduces the main concepts and give sound
+Butterick. This open access book introduces the main concepts and give some
 advice to improve your written documents.
 
 At this point, you could object that a scientific figure possesses only a few
