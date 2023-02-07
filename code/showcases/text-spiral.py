@@ -28,6 +28,7 @@ mpmath.mp.dps = 15000
 text = str(mpmath.pi)
 
 path = TextPath((0, 0), text, size=6, prop=FontProperties(family="Source Serif Pro"))
+path.vertices.setflags(write=1)
 Vx, Vy = path.vertices[:, 0], path.vertices[:, 1]
 X = np.interp(Vx, L, T[:, 0]) + Vy * np.interp(Vx, L, O[:, 0])
 Y = np.interp(Vx, L, T[:, 1]) + Vy * np.interp(Vx, L, O[:, 1])
