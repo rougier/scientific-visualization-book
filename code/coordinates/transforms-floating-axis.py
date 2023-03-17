@@ -47,7 +47,7 @@ xmax, ymax = DC_to_NFC((P[:, 0].max(), P[:, 1].max()))
 transform = Affine2D().scale(1, 1).rotate_deg(orientation)
 helper = floating_axes.GridHelperCurveLinear(transform, (0, size[0], 0, size[1]))
 ax2 = floating_axes.FloatingSubplot(fig, 111, grid_helper=helper, zorder=0)
-ax2.set_position((xmin, ymin, xmax - xmin, ymax - xmin))
+ax2.set_position((xmin, ymin, xmax - xmin, ymax - ymin))
 fig.add_subplot(ax2)
 
 

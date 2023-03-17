@@ -315,7 +315,7 @@ We now have all the information to add our new axis:
                  transform, (0, size[0], 0, size[1]))
    ax2 = floating.FloatingSubplot(
                  fig, 111, grid_helper=helper, zorder=0)
-   ax2.set_position((xmin, ymin, xmax-xmin, ymax-xmin))
+   ax2.set_position((xmin, ymin, xmax-xmin, ymax-ymin))
    fig.add_subplot(ax2)
 
 The result is shown on figure :ref:`fig-transforms-floating-axis`.
