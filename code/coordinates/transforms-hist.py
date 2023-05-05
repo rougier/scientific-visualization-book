@@ -28,10 +28,10 @@ Zm = Z1.mean(axis=0)                              # mean of Z1. Zm = np.array([ 
 # Note that for some seeds, the PC1 and PC2 needs to be inverted
 # It could be fixed by looking at the orientation but I'm lazy
 W, V = np.linalg.eig(np.cov(Z1.T))                 # W: eigenvalues, V: eigenvectors
-PC1, PC2 = V[np.argsort(abs(W))]                   # PC1, PC2: 1st and 2nd Principal components
+PC1, PC2 = V.T[np.flip(np.argsort(abs(W)))]        # PCs are columns of V, and the 1st one has the highest eigenvalue
 if PC2[1] < 0:                                     # to make PC2 "upwards"
     PC2 = -PC2
-rotation = 180 * np.arctan2(*PC1) / np.pi
+rotation = 180 * np.arctan2(*np.flip(PC1)) / np.pi # the 1st argument of arctan2 is the y value
 T = np.array([PC1[0], PC1[1]])                     # tangent vector of PC1 (a deep copy of PC1)
 O = np.array([PC2[0], PC2[1]])                     # orthogonal vector of PC1 (a deep copy of PC2)
 
@@ -110,7 +110,7 @@ h0 = w0 = np.sqrt((xo - x) ** 2 + (yo - y) ** 2)    # preparation of the histogr
 #    It is possible to have non squared axis, but it would complicate things.
 xmin, xmax = -16, 16                               # "enough" large symmetric x limits for histogram
 ymin, ymax = 0, xmax - xmin                        # y limits, same range but positive
-transform = Affine2D().rotate_deg(-rotation)
+transform = Affine2D().rotate_deg(rotation-90)
 helper = floating_axes.GridHelperCurveLinear(transform, (xmin, xmax, ymin, ymax))
 ax2 = floating_axes.FloatingSubplot(fig, 111, grid_helper=helper, zorder=0)
 
@@ -118,7 +118,7 @@ ax2 = floating_axes.FloatingSubplot(fig, 111, grid_helper=helper, zorder=0)
 #    the size and position, it related to the non-rotate axis and we thus need
 #    to compute the bounding box. To do that, we rotate the four coordinates
 #    from which we deduce the bounding box coordinates.
-transform = Affine2D().rotate_deg(-rotation)
+transform = Affine2D().rotate_deg(rotation-90)
 R = transform.transform(                            # outline of the histogram Axes
     [
         (x - w0 / 2, y - h0 / 2),
