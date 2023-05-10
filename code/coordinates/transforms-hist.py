@@ -164,7 +164,7 @@ for x, y in zip(X1, Y):
         ha="center",
         va="center",
         size=8,
-        rotation=-rotation,
+        rotation=rotation-90,
     )
 
 # Save
