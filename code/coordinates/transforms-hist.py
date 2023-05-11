@@ -42,11 +42,11 @@ ax1 = fig.add_axes([0.05, 0.05, 0.9, 0.9], aspect=1)
 
 # Main scatter plot
 ax1.scatter(Z1[:, 0], Z1[:, 1], s=50, fc="C0", ec="white", lw=0.75)
-ax1.set_xlim([-3, 6])
-ax1.set_xticks([-3, 6])
+ax1.set_xlim([-3, 7])
+ax1.set_xticks([-3, 7])
 ax1.set_xticklabels([])
-ax1.set_ylim([-3, 6])
-ax1.set_yticks([-3, 6])
+ax1.set_ylim([-3, 7])
+ax1.set_yticks([-3, 7])
 ax1.set_yticklabels([])
 ax1.spines["top"].set_visible(False)
 ax1.spines["right"].set_visible(False)
@@ -108,7 +108,7 @@ h0 = w0 = np.sqrt((xo - x) ** 2 + (yo - y) ** 2)    # preparation of the histogr
 # 3. Create the secondary axis
 #    Warning: it must be squared, ie. xmax-xmin = ymax-ymin
 #    It is possible to have non squared axis, but it would complicate things.
-xmin, xmax = -16, 16                               # "enough" large symmetric x limits for histogram
+xmin, xmax = -18, 18                               # "enough" large symmetric x limits for histogram
 ymin, ymax = 0, xmax - xmin                        # y limits, same range but positive
 transform = Affine2D().rotate_deg(rotation-90)
 helper = floating_axes.GridHelperCurveLinear(transform, (xmin, xmax, ymin, ymax))
@@ -143,7 +143,7 @@ ax2.set_xticks([0, 1])
 ax2.patch.set_visible(False)
 
 # 6. Display the histogram, taking care of the extents of the X axis
-counts, bins = np.histogram(-Z1 @ PC1, bins=12)     # histogram of -Z1 orthogonal to PC1 direction with 12 bins
+counts, bins = np.histogram(-Z1 @ PC2, bins=12)     # histogram of -Z1 orthogonal to PC1 direction (i.e., scores on PC2) with 12 bins
 X0 = (bins - bins[0]) / (bins[-1] - bins[0])        # X0 : normalized bins range [0, 1]
 X1 = xmin + (xmax - xmin) * X0                      # X1 : stretched bins range [xmin, xmax] = [-16, 16]
 Y = np.array(counts)
