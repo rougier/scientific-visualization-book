@@ -17,7 +17,7 @@ same license as the original. To learn more, visit creativecommons.org
 Code
 ----
 
-Copyright 2021 Nicolas P. Rougier
+Copyright 2025 Nicolas P. Rougier
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
