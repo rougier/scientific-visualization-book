@@ -6,6 +6,22 @@ PDF_DIR = pdf
 RST_DIR = rst
 RST_FILES := $(wildcard $(RST_DIR)/*.rst)
 
+# GNU Info configuration
+PYTHON ?= python3
+INFO_NAME := scientific-visualization
+INFO_BUILD := build/info
+INFO_FILE := $(INFO_BUILD)/$(INFO_NAME).info
+INFO_PREFIX ?= $(HOME)/.local/share/info
+INFO_INSTALL_DIR := $(INFO_PREFIX)/$(INFO_NAME)
+
+INFO_IMAGES := $(shell find figures images -type f \
+	\( -name '*.pdf' -o -name '*.png' \))
+
+INFO_SOURCES := $(RST_FILES) \
+	$(INFO_IMAGES) \
+	scripts/build_info.py \
+	scripts/fix_texinfo_nodes.py
+
 DEPS := $(TEX_DIR)/book.tex            \
         $(TEX_DIR)/main.tex            \
         $(TEX_DIR)/00-dedication.tex   \
@@ -31,6 +47,12 @@ help:
 	@echo  "  softcover-cmyk   - Convert softcover PDF to CMYK colors"
 	@echo  "  softcover-count  - Enumerate color pages in the softcover PDF (body)"
 	@echo  ""
+	@echo  "GNU Info:"
+	@echo  "  info             - Build GNU Info manual"
+	@echo  "  install-info     - Install GNU Info manual locally"
+	@echo  "  uninstall-info   - Remove installed GNU Info manual"
+	@echo  "  clean-info       - Remove generated GNU Info files"
+	@echo  ""
 
 
 .PHONY: directories
@@ -54,13 +76,47 @@ pdf-compressed: pdf
 
 
 
-# Build front cover from the hardcover 
-front-cover: softcover-cover
-	@latexmk -cd -silent -pdf -use-make $(TEX_DIR)/front-cover.tex 
+# GNU Info --------------------------------------------------------------------
 
-# Build back cover from the hardcover 
+.PHONY: info install-info uninstall-info clean-info
+
+info: $(INFO_FILE)
+
+$(INFO_FILE): $(INFO_SOURCES)
+	$(PYTHON) scripts/build_info.py
+
+install-info: info
+	install -d "$(INFO_INSTALL_DIR)"
+	install -m 644 "$(INFO_FILE)" "$(INFO_INSTALL_DIR)/"
+	rm -rf "$(INFO_INSTALL_DIR)/images"
+	cp -a "$(INFO_BUILD)/images" "$(INFO_INSTALL_DIR)/"
+	install -d "$(INFO_PREFIX)"
+	install-info \
+		--dir-file="$(INFO_PREFIX)/dir" \
+		--section="Scientific Computing" \
+		--entry="* Scientific Visualization: ($(INFO_NAME)/$(INFO_NAME)). Python and Matplotlib scientific visualization." \
+		"$(INFO_INSTALL_DIR)/$(INFO_NAME).info"
+
+uninstall-info:
+	@if test -f "$(INFO_INSTALL_DIR)/$(INFO_NAME).info"; then \
+		install-info --delete \
+			--dir-file="$(INFO_PREFIX)/dir" \
+			--entry="* Scientific Visualization: ($(INFO_NAME)/$(INFO_NAME)). Python and Matplotlib scientific visualization." \
+			"$(INFO_INSTALL_DIR)/$(INFO_NAME).info"; \
+	fi
+	rm -rf "$(INFO_INSTALL_DIR)"
+
+clean-info:
+	rm -rf "$(INFO_BUILD)"
+
+
+# Build front cover from the hardcover
+front-cover: softcover-cover
+	@latexmk -cd -silent -pdf -use-make $(TEX_DIR)/front-cover.tex
+
+# Build back cover from the hardcover
 back-cover: softcover-cover
-	@latexmk -cd -silent -pdf -use-make $(TEX_DIR)/back-cover.tex 
+	@latexmk -cd -silent -pdf -use-make $(TEX_DIR)/back-cover.tex
 
 
 
