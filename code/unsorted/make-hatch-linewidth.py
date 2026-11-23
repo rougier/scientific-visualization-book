@@ -30,6 +30,5 @@ for width in widths:
     )
     ax.add_patch(rect)
     canvas.draw()
-    image = np.frombuffer(canvas.tostring_rgb(), dtype="uint8")
-    image = image.reshape(int(figsize[1] * dpi), int(figsize[0] * dpi), 3)
+    image = np.asarray(canvas.buffer_rgba())[..., :3]
     imageio.imwrite("hatch-%d.png" % width, image)
